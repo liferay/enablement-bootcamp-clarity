@@ -1,0 +1,10 @@
+gradle-local.properties
+/bundles/
+/client-extensions/liferay-clarity-site-initializer/build/
+/client-extensions/liferay-clarity-theme-css/build/
+/client-extensions/liferay-clarity-theme-css/dist/
+/client-extensions/liferay-clarity-site-initializer/dist/
+/node_modules/
+/node_modules_cache/
+/build/
+/.gradle/

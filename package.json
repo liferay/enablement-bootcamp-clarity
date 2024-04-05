@@ -1,0 +1,8 @@
+{
+    "private": true,
+    "workspaces": {
+        "packages": [
+            "client-extensions/liferay-clarity-theme-css"
+        ]
+    }
+}
