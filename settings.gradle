@@ -13,3 +13,5 @@ buildscript {
 }
 
 apply plugin: "com.liferay.workspace"
+
+apply plugin: "net.saliman.properties"
