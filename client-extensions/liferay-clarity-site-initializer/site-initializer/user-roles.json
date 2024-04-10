@@ -1,2 +1,32 @@
 [
+	{
+		"emailAddress": "ian.miller@clarity.com",
+		"roles": [
+			"IT Manager"
+		]
+	},
+	{
+		"emailAddress": "walter.douglas@clarity.com",
+		"roles": [
+			"Web Developer"
+		]
+	},
+	{
+		"emailAddress": "clara.murphy@clarity.com",
+		"roles": [
+			"Marketing Content Manager"
+		]
+	},
+	{
+		"emailAddress": "christian.carter@clarity.com",
+		"roles": [
+			"Marketing Content Contributor"
+		]
+	},
+	{
+		"emailAddress": "harper.roberts@clarity.com",
+		"roles": [
+			"HR Content Contributor"
+		]
+	}
 ]

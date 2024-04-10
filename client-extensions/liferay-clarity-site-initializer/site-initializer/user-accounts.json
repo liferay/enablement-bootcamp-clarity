@@ -1,2 +1,102 @@
 [
+	{
+		"accountBriefs": [
+			{
+				"externalReferenceCode": "CLARITY-EMPLOYEES"
+			}
+		],
+		"alternateName": "ian.miller",
+		"birthDate": "1949-12-18T00:00:00.000+00:00",
+		"emailAddress": "ian.miller@clarity.com",
+		"externalReferenceCode": "CUSER-001",
+		"familyName": "Miller",
+		"givenName": "Ian",
+		"jobTitle": "IT Manager",
+		"name": "Ian Miller",
+		"organizationBriefs": [
+			{
+				"name": "Clarity IT"
+			}
+		]
+	},
+	{
+		"accountBriefs": [
+			{
+				"externalReferenceCode": "CLARITY-EMPLOYEES"
+			}
+		],
+		"alternateName": "walter.douglas",
+		"birthDate": "1949-12-18T00:00:00.000+00:00",
+		"emailAddress": "walter.douglas@clarity.com",
+		"externalReferenceCode": "CUSER-002",
+		"familyName": "Walter",
+		"givenName": "Douglas",
+		"jobTitle": "Web Developer",
+		"name": "Walter Douglas",
+		"organizationBriefs": [
+			{
+				"name": "Clarity IT"
+			}
+		]
+	},
+	{
+		"accountBriefs": [
+			{
+				"externalReferenceCode": "CLARITY-EMPLOYEES"
+			}
+		],
+		"alternateName": "clara.murphy",
+		"birthDate": "1949-12-18T00:00:00.000+00:00",
+		"emailAddress": "clara.murphy@clarity.com",
+		"externalReferenceCode": "CUSER-003",
+		"familyName": "Murphy",
+		"givenName": "Clara",
+		"jobTitle": "Marketing Content Manager",
+		"name": "Clara Murphy",
+		"organizationBriefs": [
+			{
+				"name": "Clarity Marketing"
+			}
+		]
+	},
+	{
+		"accountBriefs": [
+			{
+				"externalReferenceCode": "CLARITY-EMPLOYEES"
+			}
+		],
+		"alternateName": "christian.carter",
+		"birthDate": "1949-12-18T00:00:00.000+00:00",
+		"emailAddress": "christian.carter@clarity.com",
+		"externalReferenceCode": "CUSER-004",
+		"familyName": "Carter",
+		"givenName": "Christian",
+		"jobTitle": "Marketing Content Contributor",
+		"name": "Christian Carter",
+		"organizationBriefs": [
+			{
+				"name": "Clarity Marketing"
+			}
+		]
+	},
+	{
+		"accountBriefs": [
+			{
+				"externalReferenceCode": "CLARITY-EMPLOYEES"
+			}
+		],
+		"alternateName": "harper.roberts",
+		"birthDate": "1949-12-18T00:00:00.000+00:00",
+		"emailAddress": "harper.roberts@clarity.com",
+		"externalReferenceCode": "CUSER-005",
+		"familyName": "Roberts",
+		"givenName": "Harper",
+		"jobTitle": "HR Content Contributor",
+		"name": "Harper Roberts",
+		"organizationBriefs": [
+			{
+				"name": "Clarity Human Resources"
+			}
+		]
+	}
 ]

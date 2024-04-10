@@ -1,0 +1,14 @@
+[
+	{
+		"externalReferenceCode": "CLARITY-IT",
+		"name": "Clarity IT"
+	},
+	{
+		"externalReferenceCode": "CLARITY-MKT",
+		"name": "Clarity Marketing"
+	},
+	{
+		"externalReferenceCode": "CLARITY-HR",
+		"name": "Clarity Human Resources"
+	}
+]
