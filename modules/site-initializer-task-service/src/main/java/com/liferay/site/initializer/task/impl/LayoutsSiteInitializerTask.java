@@ -5,6 +5,7 @@ import com.liferay.portal.kernel.log.Log;
 import com.liferay.portal.kernel.log.LogFactoryUtil;
 import com.liferay.site.initializer.task.api.SiteInitializerTask;
 import com.liferay.site.initializer.task.constant.ContextKeys;
+import org.osgi.framework.BundleContext;
 import org.osgi.service.component.annotations.Component;
 
 import java.util.Map;
@@ -25,7 +26,7 @@ public class LayoutsSiteInitializerTask implements SiteInitializerTask {
     private static final Log _log = LogFactoryUtil.getLog(LayoutsSiteInitializerTask.class);
 
     @Override
-    public void execute(long groupId, Map<String, Object> context) {
+    public void execute(long groupId, BundleContext bundleContext, Map<String, Object> context) {
 
         JSONArray layouts = (JSONArray)context.get(ContextKeys.LAYOUTS);
 

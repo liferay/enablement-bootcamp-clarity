@@ -13,6 +13,7 @@ import com.liferay.portal.kernel.log.LogFactoryUtil;
 import com.liferay.portal.kernel.model.Group;
 import com.liferay.portal.kernel.model.Theme;
 import com.liferay.portal.kernel.service.GroupLocalService;
+import com.liferay.portal.kernel.service.ServiceContextThreadLocal;
 import com.liferay.portal.kernel.service.ThemeLocalService;
 import com.liferay.portal.kernel.util.Validator;
 import com.liferay.site.exception.InitializationException;
@@ -93,7 +94,7 @@ public class ClaritySiteInitializer implements SiteInitializer  {
             Map<String, Object> context = _buildContext(groupId);
 
             // load the resources that are bundled with the initializer module
-            _loadConfigs(context);
+//            _loadConfigs(context);
 
             // run through the configured tasks, in sequence, to setup the demo
             _runTasks(groupId, context);
@@ -131,7 +132,7 @@ public class ClaritySiteInitializer implements SiteInitializer  {
                     if ( _log.isInfoEnabled())
                         _log.info(MessageFormat.format("executing initializer task: {0}", t.getClass().getName()));
 
-                    t.execute(groupId, context);
+                    t.execute(groupId, _bundleContext, context);
                 }
                 catch(Exception e) {
                     _log.error(MessageFormat.format("error occurred while executing task: {0} :: error => {1}", t.getClass().getName(), e.getMessage()));
@@ -156,6 +157,8 @@ public class ClaritySiteInitializer implements SiteInitializer  {
             context.put(ContextKeys.COMPANY_ID, group.getCompanyId());
             context.put(ContextKeys.GROUP, group);
             context.put(ContextKeys.CREATOR_USER_ID, group.getCreatorUserId());
+            context.put(ContextKeys.SERVICE_CONTEXT, ServiceContextThreadLocal.getServiceContext());
+
         }
         catch ( Exception e )
         {
@@ -169,34 +172,34 @@ public class ClaritySiteInitializer implements SiteInitializer  {
      * Used to load the configuration dependencies that are bundled (resources) with the module.
      * @param context {@link Map} used to store context for the site initializer tasks.
      */
-    private void _loadConfigs(Map<String, Object> context)
-    {
-        try
-        {
-            Bundle bundle = _bundleContext.getBundle();
-            Enumeration<URL> resources = bundle.findEntries(_DEPENDENCIES_PATH, "*.json", true);
-
-            while ( resources.hasMoreElements() )
-            {
-                URL element = resources.nextElement();
-
-                InputStream in = element.openStream();
-                String contents = StringUtil.read(in);
-
-                String[] fileTokens = element.getFile().split(StringPool.SLASH);
-                String filename = fileTokens[fileTokens.length - 1].replace(".json", StringPool.BLANK);
-
-                context.put(filename.trim().toUpperCase(), contents);
-            }
-        }
-        catch ( Exception e )
-        {
-            _log.error(MessageFormat.format("error occurred while trying to load config dependencies :: error => {0}", e.getMessage()));
-
-            if ( _log.isDebugEnabled())
-                _log.debug(e);
-        }
-    }
+//    private void _loadConfigs(Map<String, Object> context)
+//    {
+//        try
+//        {
+//            Bundle bundle = _bundleContext.getBundle();
+//            Enumeration<URL> resources = bundle.findEntries(_DEPENDENCIES_PATH, "*.json", true);
+//
+//            while ( resources.hasMoreElements() )
+//            {
+//                URL element = resources.nextElement();
+//
+//                InputStream in = element.openStream();
+//                String contents = StringUtil.read(in);
+//
+//                String[] fileTokens = element.getFile().split(StringPool.SLASH);
+//                String filename = fileTokens[fileTokens.length - 1].replace(".json", StringPool.BLANK);
+//
+//                context.put(filename.trim().toUpperCase(), contents);
+//            }
+//        }
+//        catch ( Exception e )
+//        {
+//            _log.error(MessageFormat.format("error occurred while trying to load config dependencies :: error => {0}", e.getMessage()));
+//
+//            if ( _log.isDebugEnabled())
+//                _log.debug(e);
+//        }
+//    }
 
 
     /**

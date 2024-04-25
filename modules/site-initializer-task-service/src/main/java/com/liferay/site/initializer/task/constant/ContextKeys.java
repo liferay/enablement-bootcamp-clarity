@@ -16,6 +16,8 @@ public class ContextKeys {
 
     public static final String CREATOR_USER_ID = "CREATOR_USER_ID";
 
+    public static final String SERVICE_CONTEXT = "SERVICE_CONTEXT";
+
 
     // Tasks
 
