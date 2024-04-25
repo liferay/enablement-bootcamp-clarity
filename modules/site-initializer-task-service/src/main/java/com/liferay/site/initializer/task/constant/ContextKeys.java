@@ -18,6 +18,8 @@ public class ContextKeys {
 
     public static final String SERVICE_CONTEXT = "SERVICE_CONTEXT";
 
+    public static final String DEPENDENCIES_PATH = "DEPENDENCIES_PATH";
+
 
     // Tasks
 

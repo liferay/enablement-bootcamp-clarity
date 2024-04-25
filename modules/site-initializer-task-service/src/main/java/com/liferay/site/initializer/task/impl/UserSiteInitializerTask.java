@@ -105,7 +105,7 @@ public class UserSiteInitializerTask extends BaseSiteInitializerTask implements 
                         _userLocalService.updatePortrait(user.getUserId(), image);
 
                     if (_log.isInfoEnabled())
-                        _log.info(MessageFormat.format("email => {0}", user.getEmailAddress()));
+                        _log.info(MessageFormat.format("USER added to system, email => {0}", user.getEmailAddress()));
                 } catch (Exception e) {
 
                     if (_log.isWarnEnabled()) {

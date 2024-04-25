@@ -158,6 +158,7 @@ public class ClaritySiteInitializer implements SiteInitializer  {
             context.put(ContextKeys.GROUP, group);
             context.put(ContextKeys.CREATOR_USER_ID, group.getCreatorUserId());
             context.put(ContextKeys.SERVICE_CONTEXT, ServiceContextThreadLocal.getServiceContext());
+            context.put(ContextKeys.DEPENDENCIES_PATH, _DEPENDENCIES_PATH);
 
         }
         catch ( Exception e )
