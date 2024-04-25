@@ -1,0 +1,5 @@
+Bundle-Name: Liferay Site Initializer Service
+Bundle-Description: Implementation Services adhering to the API contracts. Contains Site Initializer Task implementations.
+Bundle-SymbolicName: com.liferay.site.initializer.task.impl
+Bundle-Version: 1.0.0
+Export-Package: com.liferay.site.initializer.task.constant

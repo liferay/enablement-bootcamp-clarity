@@ -1,0 +1,32 @@
+[
+	{
+		"firstname": "Ian",
+		"lastname": "Miller",
+		"email": "ian.miller@clarity.com",
+		"screenname": "ianmiller"
+	},
+	{
+		"firstname": "Walter",
+		"lastname": "Douglas",
+		"email": "walter.douglas@clarity.com",
+		"screenname": "walterdouglas"
+	},
+	{
+		"firstname": "Clara",
+		"lastname": "Murphy",
+		"email": "clara.murphy@clarity.com",
+		"screenname": "claramurphy"
+	},
+	{
+		"firstname": "Christian",
+		"lastname": "Carter",
+		"email": "christian.carter@clarity.com",
+		"screenname": "christiancarter"
+	},
+	{
+		"firstname": "Harper",
+		"lastname": "Roberts",
+		"email": "harper.roberts@clarity.com",
+		"screenname": "harperroberts"
+	}
+]
