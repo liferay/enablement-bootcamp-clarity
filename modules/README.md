@@ -1,8 +1,8 @@
 ## Getting Started
 
-1. Build and deploy the site-initializer-api, site-initializer-service and clarity-site-initialzer modules
+1. Build and deploy the **site-initializer-api**, **site-initializer-service** and **clarity-site-initializer** modules
 
-2. Log in as the administrator and configure the site initializer under Control Panel. > System Settings > Liferay Enablement Bootcamp (section) > Clarity Site Initializer
+2. Log in as the administrator and configure the site initializer under *Control Panel > System Settings > Liferay Enablement Bootcamp (section) > Clarity Site Initializer*
 
 
 ## How does this work?
