@@ -170,40 +170,6 @@ public class ClaritySiteInitializer implements SiteInitializer  {
     }
 
     /**
-     * Used to load the configuration dependencies that are bundled (resources) with the module.
-     * @param context {@link Map} used to store context for the site initializer tasks.
-     */
-//    private void _loadConfigs(Map<String, Object> context)
-//    {
-//        try
-//        {
-//            Bundle bundle = _bundleContext.getBundle();
-//            Enumeration<URL> resources = bundle.findEntries(_DEPENDENCIES_PATH, "*.json", true);
-//
-//            while ( resources.hasMoreElements() )
-//            {
-//                URL element = resources.nextElement();
-//
-//                InputStream in = element.openStream();
-//                String contents = StringUtil.read(in);
-//
-//                String[] fileTokens = element.getFile().split(StringPool.SLASH);
-//                String filename = fileTokens[fileTokens.length - 1].replace(".json", StringPool.BLANK);
-//
-//                context.put(filename.trim().toUpperCase(), contents);
-//            }
-//        }
-//        catch ( Exception e )
-//        {
-//            _log.error(MessageFormat.format("error occurred while trying to load config dependencies :: error => {0}", e.getMessage()));
-//
-//            if ( _log.isDebugEnabled())
-//                _log.debug(e);
-//        }
-//    }
-
-
-    /**
      * Gets the description for the site initializer.
      *
      * @param locale {@link Locale} with the language to be used when looking up the description
