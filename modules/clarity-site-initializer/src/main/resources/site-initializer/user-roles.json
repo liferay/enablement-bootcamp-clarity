@@ -1,0 +1,39 @@
+[
+	{
+		"emailAddress": "ian.miller@clarity.com",
+		"roles": [
+			"IT Manager",
+			"Site Administrator"
+		]
+	},
+	{
+		"emailAddress": "walter.douglas@clarity.com",
+		"roles": [
+			"Web Developer",
+			"Site Administrator"
+		]
+	},
+	{
+		"emailAddress": "clara.murphy@clarity.com",
+		"roles": [
+			"Marketing Manager",
+			"Site Content Reviewer",
+			"Site Owner"
+		]
+	},
+	{
+		"emailAddress": "christian.carter@clarity.com",
+		"roles": [
+			"Site Content Contributor",
+			"Marketing Coordinator"
+		]
+	},
+	{
+		"emailAddress": "harper.roberts@clarity.com",
+		"roles": [
+			"Site Content Contributor",
+			"Site Content Reviewer",
+			"Director of Human Resources"
+		]
+	}
+]
