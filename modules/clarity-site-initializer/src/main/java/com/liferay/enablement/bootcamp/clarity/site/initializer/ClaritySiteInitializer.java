@@ -54,12 +54,6 @@ public class ClaritySiteInitializer implements SiteInitializer  {
     private static final String _CLARITY_THEME_ID = "clarity_WAR_claritytheme";
 
     private static final String _DEPENDENCIES_PATH = "site-initializer/";
-//
-//    private static final String _CONFIGS_FOLDER = "/configs";
-//
-//    private static final String _DOCUMENT_LIBRARY_DEPENDENCIES_PATH = "com/liferay/enablement/bootcamp/claritysite/initializer/dependencies/document_library";
-//
-//    private static final String _BLOG_IMAGES = StringPool.FORWARD_SLASH + "images/blog";
 
     private BundleContext _bundleContext;
 
@@ -92,9 +86,6 @@ public class ClaritySiteInitializer implements SiteInitializer  {
 
             // create initializer context that is used to  carry meta data to the supporting services
             Map<String, Object> context = _buildContext(groupId);
-
-            // load the resources that are bundled with the initializer module
-//            _loadConfigs(context);
 
             // run through the configured tasks, in sequence, to setup the demo
             _runTasks(groupId, context);
