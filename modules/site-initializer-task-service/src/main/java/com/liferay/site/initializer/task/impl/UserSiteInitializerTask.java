@@ -92,7 +92,7 @@ public class UserSiteInitializerTask extends BaseSiteInitializerTask implements 
                     userData = usersJSONArray.getJSONObject(i);
 
                     // check if user exists
-                    user = _userLocalService.getUserByEmailAddress(serviceContext.getCompanyId(), userData.getString("email"));
+                    user = _userLocalService.getUserByEmailAddress(serviceContext.getCompanyId(), userData.getString("emailAddress"));
 
                 } catch (NoSuchUserException nsue) {
                     // create user
@@ -149,7 +149,7 @@ public class UserSiteInitializerTask extends BaseSiteInitializerTask implements 
             String password2 = "learn";
             boolean autoScreenName = Boolean.FALSE;
             String screenName = userData.getString("screenName");
-            String emailAddress = userData.getString("email");
+            String emailAddress = userData.getString("emailAddress");
             Locale locale = serviceContext.getLocale();
             String firstName = userData.getString("firstName");
             String middleName = userData.getString("middleName");

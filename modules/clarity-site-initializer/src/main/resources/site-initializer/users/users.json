@@ -2,7 +2,7 @@
 	{
 		"firstName": "Ian",
 		"lastName": "Miller",
-		"email": "ian.miller@clarity.com",
+		"emailAddress": "ian.miller@clarity.com",
 		"screenName": "ianmiller",
 		"gender": "M",
 		"jobTitle": ""
@@ -10,7 +10,7 @@
 	{
 		"firstName": "Walter",
 		"lastName": "Douglas",
-		"email": "walter.douglas@clarity.com",
+		"emailAddress": "walter.douglas@clarity.com",
 		"screenName": "walterdouglas",
 		"gender": "M",
 		"jobTitle": ""
@@ -18,7 +18,7 @@
 	{
 		"firstName": "Clara",
 		"lastName": "Murphy",
-		"email": "clara.murphy@clarity.com",
+		"emailAddress": "clara.murphy@clarity.com",
 		"screenName": "claramurphy",
 		"gender": "F",
 		"jobTitle": ""
@@ -26,7 +26,7 @@
 	{
 		"firstName": "Christian",
 		"lastName": "Carter",
-		"email": "christian.carter@clarity.com",
+		"emailAddress": "christian.carter@clarity.com",
 		"screenName": "christiancarter",
 		"gender": "M",
 		"jobTitle": ""
@@ -34,7 +34,7 @@
 	{
 		"firstName": "Harper",
 		"lastName": "Roberts",
-		"email": "harper.roberts@clarity.com",
+		"emailAddress": "harper.roberts@clarity.com",
 		"screenName": "harperroberts",
 		"gender": "F",
 		"jobTitle": ""
