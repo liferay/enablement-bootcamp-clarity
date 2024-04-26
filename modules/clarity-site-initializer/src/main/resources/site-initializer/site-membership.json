@@ -1,0 +1,14 @@
+[
+  {
+    "type": "user",
+    "emailAddress": "harper.roberts@clarity.com"
+  },
+  {
+    "type": "user-group",
+    "name": "Marketing"
+  },
+  {
+    "type": "user-group",
+    "name": "IT"
+  }
+]
