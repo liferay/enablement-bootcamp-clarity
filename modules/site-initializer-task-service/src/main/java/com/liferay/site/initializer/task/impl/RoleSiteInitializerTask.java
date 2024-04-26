@@ -114,7 +114,7 @@ public class RoleSiteInitializerTask extends BaseSiteInitializerTask implements 
             }
         } else {
             if (_log.isInfoEnabled())
-                _log.info("no resources found for users.");
+                _log.info("no resources found for roles.");
         }
     }
 
