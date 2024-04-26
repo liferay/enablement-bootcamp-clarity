@@ -146,6 +146,7 @@ public class ClaritySiteInitializer implements SiteInitializer  {
             Group group = _groupLocalService.getGroup(groupId);
 
             context.put(ContextKeys.COMPANY_ID, group.getCompanyId());
+            context.put(ContextKeys.GROUP_ID, groupId);
             context.put(ContextKeys.GROUP, group);
             context.put(ContextKeys.CREATOR_USER_ID, group.getCreatorUserId());
             context.put(ContextKeys.SERVICE_CONTEXT, ServiceContextThreadLocal.getServiceContext());
