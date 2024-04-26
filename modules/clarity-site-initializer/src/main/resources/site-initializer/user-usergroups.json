@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Marketing",
+    "members": [
+      "christian.carter@clarity.com",
+      "clara.murphy@clarity.com"
+    ]
+  },
+  {
+    "name": "IT",
+    "members": [
+      "ian.miller@clarity.com",
+      "walter.douglas@clarity.com"
+    ]
+  }
+]
