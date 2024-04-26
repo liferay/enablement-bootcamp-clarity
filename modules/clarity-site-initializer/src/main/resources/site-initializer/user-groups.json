@@ -1,0 +1,12 @@
+[
+  {
+    "description": "Members of the marketing department at Clarity",
+    "externalReferenceCode": "CLARITYMARKETINGUSERGROUP",
+    "name": "Marketing"
+  },
+  {
+    "description": "Members of the IT department at Clarity",
+    "externalReferenceCode": "CLARITYITUSERGROUP",
+    "name": "IT"
+  }
+]
