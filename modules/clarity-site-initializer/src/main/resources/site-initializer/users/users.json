@@ -5,7 +5,7 @@
 		"emailAddress": "ian.miller@clarity.com",
 		"screenName": "ianmiller",
 		"gender": "M",
-		"jobTitle": ""
+		"jobTitle": "IT Manager"
 	},
 	{
 		"firstName": "Walter",
@@ -13,7 +13,7 @@
 		"emailAddress": "walter.douglas@clarity.com",
 		"screenName": "walterdouglas",
 		"gender": "M",
-		"jobTitle": ""
+		"jobTitle": "Web Developer"
 	},
 	{
 		"firstName": "Clara",
@@ -21,7 +21,7 @@
 		"emailAddress": "clara.murphy@clarity.com",
 		"screenName": "claramurphy",
 		"gender": "F",
-		"jobTitle": ""
+		"jobTitle": "Marketing Manager"
 	},
 	{
 		"firstName": "Christian",
@@ -29,7 +29,7 @@
 		"emailAddress": "christian.carter@clarity.com",
 		"screenName": "christiancarter",
 		"gender": "M",
-		"jobTitle": ""
+		"jobTitle": "Marketing Coordinator"
 	},
 	{
 		"firstName": "Harper",
@@ -37,6 +37,6 @@
 		"emailAddress": "harper.roberts@clarity.com",
 		"screenName": "harperroberts",
 		"gender": "F",
-		"jobTitle": ""
+		"jobTitle": "Director of Human Resources"
 	}
 ]
