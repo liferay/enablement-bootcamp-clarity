@@ -45,7 +45,7 @@ import java.util.Map;
         },
         service = SiteInitializer.class
 )
-public class ClaritySiteInitializer implements SiteInitializer  {
+public class ClaritySiteInitializer extends BundleSiteInitializer  {
 
     public static final String KEY = "clarity-site-initializer";
 
@@ -59,17 +59,8 @@ public class ClaritySiteInitializer implements SiteInitializer  {
 
     private ClaritySiteInitializerSystemConfiguration _configuration;
 
-    @Reference(target = "(osgi.web.symbolicname=com.liferay.enablement.bootcamp.clarity.site.initializer)")
-    private ServletContext _servletContext;
-
     @Reference
     private Language _language;
-
-    @Reference
-    private ThemeLocalService _themeLocalService;
-
-    @Reference
-    private GroupLocalService _groupLocalService;
 
     /**
      *
@@ -80,6 +71,13 @@ public class ClaritySiteInitializer implements SiteInitializer  {
     public void initialize(long groupId) throws InitializationException
     {
         try {
+
+            setBundleContext(_bundleContext);
+            setBundle(_bundleContext.getBundle());
+
+
+            super.initialize(groupId);
+
 
             if (_log.isInfoEnabled())
                 _log.info("Starting Clarity Site Initializer ...");

@@ -5291,6 +5291,7 @@ public class BundleSiteInitializer implements SiteInitializer {
     @Reference
     protected SegmentsExperienceLocalService _segmentsExperienceLocalService;
 
+    @Reference(target = "(osgi.web.symbolicname=com.liferay.enablement.bootcamp.clarity.site.initializer)")
     protected ServletContext _servletContext;
 
     @Reference
@@ -5371,6 +5372,14 @@ public class BundleSiteInitializer implements SiteInitializer {
         protected Map<String, SiteNavigationMenuItemSetting>
                 _siteNavigationMenuItemSettings = new HashMap<>();
 
+    }
+
+    protected void setBundleContext(BundleContext bundleContext) {
+        this._bundleContext = bundleContext;
+    }
+
+    protected void setBundle(Bundle bundle) {
+        this._bundle = bundle;
     }
 
     @Activate

@@ -7,3 +7,4 @@ Web-ContextPath: /site-initializer-clarity
 Provide-Capability:\
 	liferay.language.resources;\
 		resource.bundle.base.name="content.Language"
+-dsannotations-options: inherit
