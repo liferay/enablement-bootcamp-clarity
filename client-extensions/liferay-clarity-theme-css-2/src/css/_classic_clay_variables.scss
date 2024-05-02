@@ -159,13 +159,16 @@ $spacers: map-deep-merge(
 		1: var(--spacer-1, $spacer * 0.25),
 		2: var(--spacer-2, $spacer * 0.5),
 		3: var(--spacer-3, $spacer * 1),
-		4: var(--spacer-4, $spacer * 1.5),
-		5: var(--spacer-5, $spacer * 3),
-		6: var(--spacer-6, $spacer * 4.5),
-		7: var(--spacer-7, $spacer * 6),
-		8: var(--spacer-8, $spacer * 7.5),
-		9: var(--spacer-9, $spacer * 9),
-		10: var(--spacer-10, $spacer * 10),
+		4: var(--spacer-4, $spacer * 1.25),
+		5: var(--spacer-5, $spacer * 1.5),
+		6: var(--spacer-6, $spacer * 2),
+		7: var(--spacer-7, $spacer * 3),
+		8: var(--spacer-8, $spacer * 4.5),
+		9: var(--spacer-9, $spacer * 5),
+		10: var(--spacer-10, $spacer * 6),
+		11: var(--spacer-11, $spacer * 7.5),
+		12: var(--spacer-12, $spacer * 9),
+		13: var(--spacer-13, $spacer * 10),
 	),
 	$spacers
 );
@@ -280,7 +283,7 @@ $font-import-url: null !default;
 
 $font-family-monospace: sfmono-regular, menlo, monaco, consolas,
 	'Liberation Mono', 'Courier New', monospace !default;
-$font-family-sans-serif: system-ui, -apple-system, blinkmacsystemfont,
+$font-family-sans-serif: 'Poppins', system-ui, -apple-system, blinkmacsystemfont,
 	'Segoe UI', roboto, oxygen-sans, ubuntu, cantarell, 'Helvetica Neue', arial,
 	sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !default;
 $font-family-serif: georgia, 'Times New Roman', times, serif !default;
