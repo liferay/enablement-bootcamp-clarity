@@ -9,8 +9,11 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/client-extensions" />
+            <option value="$PROJECT_DIR$/client-extensions/liferay-clarity-batch" />
+            <option value="$PROJECT_DIR$/client-extensions/liferay-clarity-etc-spring-boot" />
             <option value="$PROJECT_DIR$/client-extensions/liferay-clarity-site-initializer" />
             <option value="$PROJECT_DIR$/client-extensions/liferay-clarity-theme-css" />
+            <option value="$PROJECT_DIR$/client-extensions/liferay-clarity-theme-css-old" />
             <option value="$PROJECT_DIR$/modules" />
             <option value="$PROJECT_DIR$/modules/bootcamp-buddy" />
             <option value="$PROJECT_DIR$/modules/bootcamp-buddy/bootcamp-buddy-api" />
