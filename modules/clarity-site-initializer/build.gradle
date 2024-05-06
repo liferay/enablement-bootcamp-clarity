@@ -1,7 +1,0 @@
-dependencies {
-	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
-
-	// projects
-	compileOnly project(":modules:site-initializer-task-api")
-	compileOnly project(":modules:site-initializer-task-service")
-}

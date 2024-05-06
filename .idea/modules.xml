@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/enablement-bootcamp-clarity.iml" filepath="$PROJECT_DIR$/.idea/modules/enablement-bootcamp-clarity.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/client-extensions/liferay-clarity-site-initializer/enablement-bootcamp-clarity.client-extensions.liferay-clarity-site-initializer.iml" filepath="$PROJECT_DIR$/.idea/modules/client-extensions/liferay-clarity-site-initializer/enablement-bootcamp-clarity.client-extensions.liferay-clarity-site-initializer.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/client-extensions/liferay-clarity-theme-css/enablement-bootcamp-clarity.client-extensions.liferay-clarity-theme-css.iml" filepath="$PROJECT_DIR$/.idea/modules/client-extensions/liferay-clarity-theme-css/enablement-bootcamp-clarity.client-extensions.liferay-clarity-theme-css.iml" />
     </modules>
   </component>
