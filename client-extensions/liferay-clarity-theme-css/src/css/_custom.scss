@@ -35,3 +35,19 @@ li.lfr-nav-item.nav-item.selected.active {
     border-radius: 5px;
     color: var(--primary);
 }
+
+.bg-light {
+    background-color: var(--gray-100) !important;
+}
+
+.panel-header {
+    border-bottom: 0px solid transparent;
+    border-top-left-radius: calc( 	0.5rem - 1px );
+    border-top-right-radius: calc( 	0.5rem - 1px );
+    display: block;
+    font-size: 0.875rem;
+    line-height: 1.2;
+    padding: 0.75rem 0.3rem;
+    position: relative;
+    width: 100%;
+}
