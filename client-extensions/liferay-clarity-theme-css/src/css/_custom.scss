@@ -1,3 +1,37 @@
 @import 'classic_custom';
 
 @import 'dialect/index';
+
+
+.list-menu ul {
+    padding-left: 0;
+}
+
+li.lfr-nav-item.open {
+    padding-bottom: 0.85rem;
+}
+
+li.lfr-nav-item.open > a {
+    text-decoration: none;
+}
+
+
+li.lfr-nav-item.nav-item {
+    font-weight: bold;
+}
+
+li.lfr-nav-item.nav-item:hover {
+    font-weight: bold;
+    padding: 3px;
+    background-color: var(--color-brand-primary-lighten-5);
+    border-radius: 5px;
+    color: var(--primary);
+}
+
+li.lfr-nav-item.nav-item.selected.active {
+    font-weight: bold;
+    padding: 3px;
+    background-color: var(--color-brand-primary-lighten-5);
+    border-radius: 5px;
+    color: var(--primary);
+}
