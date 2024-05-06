@@ -4,10 +4,12 @@ import com.liferay.asset.display.page.portlet.AssetDisplayPageFriendlyURLProvide
 import com.liferay.asset.kernel.model.AssetEntry;
 import com.liferay.info.item.ClassPKInfoItemIdentifier;
 import com.liferay.info.item.InfoItemReference;
+import com.liferay.petra.string.StringPool;
 import com.liferay.portal.kernel.exception.PortalException;
 import com.liferay.portal.kernel.log.Log;
 import com.liferay.portal.kernel.log.LogFactoryUtil;
 import com.liferay.portal.kernel.theme.ThemeDisplay;
+import com.liferay.portal.kernel.util.Validator;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 
@@ -37,7 +39,7 @@ public class DisplayPageURLHelper {
 
     public String getDisplayPageURL(String className, long classPK, ThemeDisplay themeDisplay) {
 
-        String url = null;
+        String url = StringPool.BLANK;
 
         if (themeDisplay == null) {
             if ( _log.isDebugEnabled())
@@ -53,7 +55,10 @@ public class DisplayPageURLHelper {
                 _log.info("classPK => " + classPK);
             }
 
-            url = _assetDisplayPageFriendlyURLProvider.getFriendlyURL(new InfoItemReference(className, classPK), themeDisplay);
+            String displayPageURL = _assetDisplayPageFriendlyURLProvider.getFriendlyURL(new InfoItemReference(className, classPK), themeDisplay);
+
+            if (Validator.isNotNull(displayPageURL))
+                url = displayPageURL;
 
             if ( _log.isDebugEnabled()) {
                 _log.debug("url => " + url);
