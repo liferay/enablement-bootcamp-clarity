@@ -26,7 +26,8 @@
 	{
 		"name": "The Netherlands, Rijswijk",
 		"viewableBy": "Anyone"
-	},{
+	},
+	{
 		"name": "China, Liaoning",
 		"viewableBy": "Anyone"
 	},
@@ -47,4 +48,3 @@
 		"viewableBy": "Anyone"
 	}
 ]
-	
