@@ -28,48 +28,8 @@
 			"objectActions": [
 				{
 					"active": true,
-					"description": "On After Add, send notifications to administrative users.",
-					"label": {
-						"en_US": "Application Submitted"
-					},
-					"name": "applicationSubmitted",
-					"objectActionExecutorKey": "notification",
-					"objectActionTriggerKey": "onAfterAdd",
-					"parameters": {
-						"notificationTemplateExternalReferenceCode": "D4B8_APPLICATION_SUBMITTED_ADMIN_USER",
-						"type": "userNotification"
-					},
-					"status": {
-						"code": 0,
-						"label": "never-ran",
-						"label_i18n": "Never Ran"
-					},
-					"system": false
-				},
-				{
-					"active": true,
-					"description": "On After Add, send notifications to applicants.",
-					"label": {
-						"en_US": "Application Received"
-					},
-					"name": "applicationReceived",
-					"objectActionExecutorKey": "notification",
-					"objectActionTriggerKey": "onAfterAdd",
-					"parameters": {
-						"notificationTemplateExternalReferenceCode": "D4B8_APPLICATION_RECEIVED_APPLICANT_EMAIL",
-						"type": "email"
-					},
-					"status": {
-						"code": 0,
-						"label": "never-ran",
-						"label_i18n": "Never Ran"
-					},
-					"system": false
-				},
-				{
-					"active": true,
 					"conditionExpression": "applicationState == \"approved\" AND status == 0",
-					"description": "On After Update, send notifications to applicants when state is ‘Approved’.",
+					"description": "On after update, send notifications to applicants when state is approved.",
 					"label": {
 						"en_US": "Application Approved"
 					},
@@ -84,13 +44,12 @@
 						"code": 0,
 						"label": "never-ran",
 						"label_i18n": "Never Ran"
-					},
-					"system": false
+					}
 				},
 				{
 					"active": true,
 					"conditionExpression": "applicationState == \"denied\" AND status == 0",
-					"description": "On After Update, send notifications to applicants when state is ‘Denied’.",
+					"description": "On after update, send notifications to applicants when state is denied.",
 					"label": {
 						"en_US": "Application Denied"
 					},
@@ -105,8 +64,26 @@
 						"code": 0,
 						"label": "never-ran",
 						"label_i18n": "Never Ran"
+					}
+				},
+				{
+					"active": true,
+					"description": "On after add, send notifications to applicants.",
+					"label": {
+						"en_US": "Application Received"
 					},
-					"system": false
+					"name": "applicationReceived",
+					"objectActionExecutorKey": "notification",
+					"objectActionTriggerKey": "onAfterAdd",
+					"parameters": {
+						"notificationTemplateExternalReferenceCode": "D4B8_APPLICATION_RECEIVED_APPLICANT_EMAIL",
+						"type": "email"
+					},
+					"status": {
+						"code": 0,
+						"label": "never-ran",
+						"label_i18n": "Never Ran"
+					}
 				},
 				{
 					"active": true,
