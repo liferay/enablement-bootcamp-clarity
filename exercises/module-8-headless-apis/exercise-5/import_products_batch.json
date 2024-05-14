@@ -1,10 +1,10 @@
 [
     {
         "active": true,
-        "catalogId": 31895,
+        "catalogId": [catalog-id],
         "categories": [
             {
-                "id": 39349,
+                "id": [category-id],
                 "name": "Sunglasses",
                 "vocabulary": "clarity products"
             }
@@ -16,7 +16,7 @@
         "externalReferenceCode": "BB-34099-789-N",
         "images": [
             {
-                "fileEntryId": 44558,
+                "fileEntryId": [file-entry-id],
                 "title": {
                     "en_US": "family-prescription-sunglasses"
                 }
@@ -45,10 +45,10 @@
     },
     {
         "active": true,
-        "catalogId": 31895,
+        "catalogId": [catalog-id],
         "categories": [
             {
-                "id": 39349,
+                "id": [category-id],
                 "name": "Sunglasses",
                 "vocabulary": "clarity products"
             }
@@ -60,7 +60,7 @@
         "externalReferenceCode": "BB-34098-789-N",
         "images": [
             {
-                "fileEntryId": 44569,
+                "fileEntryId": [file-entry-id],
                 "title": {
                     "en_US": "kids-prescription-sunglasses"
                 }
