@@ -11,14 +11,9 @@
 	},
 	"items": [
 		{
-			"accountEntryRestricted": false,
 			"active": true,
 			"defaultLanguageId": "en_US",
 			"enableCategorization": true,
-			"enableComments": false,
-			"enableLocalization": false,
-			"enableObjectEntryDraft": false,
-			"enableObjectEntryHistory": false,
 			"externalReferenceCode": "D4B8_DISTRIBUTOR_APPLICATION",
 			"label": {
 				"en_US": "D4B8 Distributor Application"
@@ -103,1086 +98,110 @@
 						"code": 0,
 						"label": "never-ran",
 						"label_i18n": "Never Ran"
-					},
-					"system": false
+					}
 				}
 			],
 			"objectFields": [
 				{
 					"DBType": "String",
-					"businessType": "Text",
-					"indexed": false,
-					"indexedAsKeyword": false,
+					"businessType": "Picklist",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
 					"label": {
-						"en_US": "Author"
+						"en_US": "Annual Purchase Volume"
 					},
-					"localized": false,
-					"name": "creator",
-					"readOnly": "true",
-					"required": false,
-					"state": false,
-					"system": true,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "Date",
-					"businessType": "Date",
-					"indexed": false,
-					"indexedAsKeyword": false,
-					"label": {
-						"en_US": "Create Date"
-					},
-					"localized": false,
-					"name": "createDate",
-					"readOnly": "true",
-					"required": false,
-					"state": false,
-					"system": true,
-					"type": "Date",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": false,
-					"indexedAsKeyword": false,
-					"label": {
-						"en_US": "External Reference Code"
-					},
-					"localized": false,
-					"name": "externalReferenceCode",
+					"listTypeDefinitionExternalReferenceCode": "D4B8_ANNUAL_PURCHASE_VOLUMES",
+					"name": "annualPurchaseVolume",
 					"readOnly": "false",
-					"required": false,
 					"state": false,
-					"system": true,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "Long",
-					"businessType": "LongInteger",
-					"indexed": true,
-					"indexedAsKeyword": true,
-					"label": {
-						"en_US": "ID"
-					},
-					"localized": false,
-					"name": "id",
-					"readOnly": "true",
-					"required": false,
-					"state": false,
-					"system": true,
-					"type": "Long",
-					"unique": false
-				},
-				{
-					"DBType": "Date",
-					"businessType": "Date",
-					"indexed": false,
-					"indexedAsKeyword": false,
-					"label": {
-						"en_US": "Modified Date"
-					},
-					"localized": false,
-					"name": "modifiedDate",
-					"readOnly": "true",
-					"required": false,
-					"state": false,
-					"system": true,
-					"type": "Date",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": false,
-					"indexedAsKeyword": false,
-					"label": {
-						"en_US": "Status"
-					},
-					"localized": false,
-					"name": "status",
-					"readOnly": "true",
-					"required": false,
-					"state": false,
-					"system": true,
-					"type": "String",
-					"unique": false
+					"type": "String"
 				},
 				{
 					"DBType": "String",
 					"businessType": "Text",
 					"indexed": true,
-					"indexedAsKeyword": false,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Applicant Email Address"
+					},
+					"name": "applicantEmailAddress",
+					"objectFieldSettings": [
+						{
+							"name": "uniqueValues",
+							"value": true
+						}
+					],
+					"readOnly": "false",
+					"required": true,
+					"state": false,
+					"type": "String",
+					"unique": true
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"indexed": true,
 					"indexedLanguageId": "en_US",
 					"label": {
 						"en_US": "Applicant Name"
 					},
-					"localized": false,
 					"name": "applicantName",
 					"readOnly": "false",
 					"required": true,
 					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Applicant Email"
-					},
-					"localized": false,
-					"name": "applicantEmail",
-					"objectFieldSettings": [
-						{
-							"name": "uniqueValues",
-							"value": true
-						}
-					],
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": true
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Primary Contact Name"
-					},
-					"localized": false,
-					"name": "primaryContactName",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Primary Contact Title"
-					},
-					"localized": false,
-					"name": "primaryContactTitle",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Primary Contact Email"
-					},
-					"localized": false,
-					"name": "primaryContactEmail",
-					"objectFieldSettings": [
-						{
-							"name": "uniqueValues",
-							"value": true
-						}
-					],
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": true
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Primary Contact Phone Number"
-					},
-					"localized": false,
-					"name": "primaryContactPhoneNumber",
-					"objectFieldSettings": [
-						{
-							"name": "uniqueValues",
-							"value": true
-						}
-					],
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": true
-				},
-				{
-					"DBType": "Clob",
-					"businessType": "LongText",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Comments"
-					},
-					"localized": false,
-					"name": "comments",
-					"objectFieldSettings": [
-						{
-							"name": "showCounter",
-							"value": false
-						}
-					],
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "Clob",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Business Name"
-					},
-					"localized": false,
-					"name": "businessName",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Business Website"
-					},
-					"localized": false,
-					"name": "businessWebsite",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "Date",
-					"businessType": "Date",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"label": {
-						"en_US": "Business Established Date"
-					},
-					"localized": false,
-					"name": "businessEstablishedDate",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "Date",
-					"unique": false
-				},
-				{
-					"DBType": "Integer",
-					"businessType": "Integer",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"label": {
-						"en_US": "Number of Employees"
-					},
-					"localized": false,
-					"name": "businessEmployeeNumber",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "Integer",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Annual Revenue (in USD)"
-					},
-					"localized": false,
-					"name": "businessAnnualRevenue",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Business Phone Number"
-					},
-					"localized": false,
-					"name": "businessPhoneNumber",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Business Address Line One"
-					},
-					"localized": false,
-					"name": "businessAddressLineOne",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Business Address Line Two"
-					},
-					"localized": false,
-					"name": "businessAddressLineTwo",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Business City"
-					},
-					"localized": false,
-					"name": "businessCity",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Business State, Province, Region"
-					},
-					"localized": false,
-					"name": "businessStateProvinceRegion",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Business ZIP, Postal Code"
-					},
-					"localized": false,
-					"name": "businessZIPPostalCode",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Business Country"
-					},
-					"localized": false,
-					"name": "businessCountry",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Business License Number"
-					},
-					"localized": false,
-					"name": "businessLicenseNumber",
-					"objectFieldSettings": [
-						{
-							"name": "uniqueValues",
-							"value": true
-						}
-					],
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": true
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Business Resale Number"
-					},
-					"localized": false,
-					"name": "businessResaleNumber",
-					"objectFieldSettings": [
-						{
-							"name": "uniqueValues",
-							"value": true
-						}
-					],
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": true
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Business Tax ID Number"
-					},
-					"localized": false,
-					"name": "businessTaxIDNumber",
-					"objectFieldSettings": [
-						{
-							"name": "uniqueValues",
-							"value": true
-						}
-					],
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": true
-				},
-				{
-					"DBType": "Long",
-					"businessType": "Attachment",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Business License"
-					},
-					"localized": false,
-					"name": "businessLicense",
-					"objectFieldSettings": [
-						{
-							"name": "acceptedFileExtensions",
-							"value": "jpeg, jpg, pdf, png"
-						},
-						{
-							"name": "maximumFileSize",
-							"value": 100
-						},
-						{
-							"name": "fileSource",
-							"value": "userComputer"
-						},
-						{
-							"name": "showFilesInDocumentsAndMedia",
-							"value": true
-						},
-						{
-							"name": "storageDLFolderPath",
-							"value": "/D4B8DistributorApplication"
-						}
-					],
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "Long",
-					"unique": false
-				},
-				{
-					"DBType": "Long",
-					"businessType": "Attachment",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Proof of Insurance"
-					},
-					"localized": false,
-					"name": "businessProofOfInsurance",
-					"objectFieldSettings": [
-						{
-							"name": "acceptedFileExtensions",
-							"value": "jpeg, jpg, pdf, png"
-						},
-						{
-							"name": "maximumFileSize",
-							"value": 100
-						},
-						{
-							"name": "fileSource",
-							"value": "userComputer"
-						},
-						{
-							"name": "showFilesInDocumentsAndMedia",
-							"value": true
-						},
-						{
-							"name": "storageDLFolderPath",
-							"value": "/D4B8DistributorApplication"
-						}
-					],
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "Long",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Bank Name"
-					},
-					"localized": false,
-					"name": "bankName",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Bank Account Number"
-					},
-					"localized": false,
-					"name": "bankAccountNumber",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Bank Phone Number"
-					},
-					"localized": false,
-					"name": "bankPhoneNumber",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Bank Address Line One"
-					},
-					"localized": false,
-					"name": "bankAddressLineOne",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Bank Address Line Two"
-					},
-					"localized": false,
-					"name": "bankAddressLineTwo",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Bank City"
-					},
-					"localized": false,
-					"name": "bankCity",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Bank State, Province, Region"
-					},
-					"localized": false,
-					"name": "bankStateProvinceRegion",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Bank ZIP, Postal Code"
-					},
-					"localized": false,
-					"name": "bankZIPPostalCode",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Bank Country"
-					},
-					"localized": false,
-					"name": "bankCountry",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Reference Supplier Name"
-					},
-					"localized": false,
-					"name": "referenceSupplierName",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Reference Phone Number"
-					},
-					"localized": false,
-					"name": "referencePhoneNumber",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Reference Address Line One"
-					},
-					"localized": false,
-					"name": "referenceOneAddressLineOne",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Reference Address Line Two"
-					},
-					"localized": false,
-					"name": "referenceAddressLineTwo",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Reference City"
-					},
-					"localized": false,
-					"name": "referenceCity",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Reference State, Province, Region"
-					},
-					"localized": false,
-					"name": "referenceStateProvinceRegion",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Reference ZIP, Postal Code"
-					},
-					"localized": false,
-					"name": "referenceZIPPostalCode",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Reference Country"
-					},
-					"localized": false,
-					"name": "referenceCountry",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Picklist",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Business Type"
-					},
-					"listTypeDefinitionExternalReferenceCode": "D4B8_BUSINESS_TYPES",
-					"localized": false,
-					"name": "businessType",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "MultiselectPicklist",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Distribution Regions"
-					},
-					"listTypeDefinitionExternalReferenceCode": "D4B8_DISTRIBUTION_REGIONS",
-					"localized": false,
-					"name": "distributionRegions",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "MultiselectPicklist",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Business Distribution Channels"
-					},
-					"listTypeDefinitionExternalReferenceCode": "D4B8_DISTRIBUTION_CHANNELS",
-					"localized": false,
-					"name": "businessDistributionChannels",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "MultiselectPicklist",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Order Types of Interest"
-					},
-					"listTypeDefinitionExternalReferenceCode": "D4B8_ORDER_TYPES",
-					"localized": false,
-					"name": "orderTypesOfInterest",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "MultiselectPicklist",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Products of Interest"
-					},
-					"listTypeDefinitionExternalReferenceCode": "D4B8_PRODUCT_TYPES",
-					"localized": false,
-					"name": "productsOfInterest",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Picklist",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Estimated Annual Purchase Volume"
-					},
-					"listTypeDefinitionExternalReferenceCode": "D4B8_ANNUAL_PURCHASE_VOLUMES",
-					"localized": false,
-					"name": "estimatedAnnualPurchaseVolume",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Picklist",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Product Labeling"
-					},
-					"listTypeDefinitionExternalReferenceCode": "D4B8_PRODUCT_LABELS",
-					"localized": false,
-					"name": "productLabeling",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
+					"type": "String"
 				},
 				{
 					"DBType": "String",
 					"businessType": "Picklist",
 					"defaultValue": "open",
 					"indexed": true,
-					"indexedAsKeyword": false,
 					"indexedLanguageId": "en_US",
 					"label": {
 						"en_US": "Application State"
 					},
 					"listTypeDefinitionExternalReferenceCode": "D4B8_APPLICATION_STATES",
-					"localized": false,
 					"name": "applicationState",
 					"objectFieldSettings": [
+						{
+							"name": "defaultValue",
+							"value": "open"
+						},
+						{
+							"name": "defaultValueType",
+							"value": "inputAsValue"
+						},
 						{
 							"name": "stateFlow",
 							"value": {
 								"objectStates": [
+									{
+										"key": "approved",
+										"objectStateTransitions": [
+											{
+												"key": "underReview"
+											}
+										]
+									},
+									{
+										"key": "denied",
+										"objectStateTransitions": [
+											{
+												"key": "underReview"
+											}
+										]
+									},
+									{
+										"key": "onHold",
+										"objectStateTransitions": [
+											{
+												"key": "open"
+											},
+											{
+												"key": "underReview"
+											}
+										]
+									},
 									{
 										"key": "open",
 										"objectStateTransitions": [
@@ -1204,26 +223,10 @@
 												"key": "denied"
 											},
 											{
-												"key": "withdrawn"
+												"key": "onHold"
 											},
 											{
-												"key": "onHold"
-											}
-										]
-									},
-									{
-										"key": "approved",
-										"objectStateTransitions": [
-											{
-												"key": "underReview"
-											}
-										]
-									},
-									{
-										"key": "denied",
-										"objectStateTransitions": [
-											{
-												"key": "underReview"
+												"key": "withdrawn"
 											}
 										]
 									},
@@ -1234,36 +237,694 @@
 												"key": "open"
 											}
 										]
-									},
-									{
-										"key": "onHold",
-										"objectStateTransitions": [
-											{
-												"key": "open"
-											},
-											{
-												"key": "underReview"
-											}
-										]
 									}
 								]
 							}
-						},
-						{
-							"name": "defaultValueType",
-							"value": "inputAsValue"
-						},
-						{
-							"name": "defaultValue",
-							"value": "open"
 						}
 					],
 					"readOnly": "false",
 					"required": true,
 					"state": true,
-					"system": false,
+					"type": "String"
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Bank Account Number"
+					},
+					"name": "bankAccountNumber",
+					"readOnly": "false",
+					"state": false,
+					"type": "String"
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Bank Address Line 1"
+					},
+					"name": "bankAddressLine1",
+					"readOnly": "false",
+					"state": false,
+					"type": "String"
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Bank Address Line 2"
+					},
+					"name": "bankAddressLine2",
+					"readOnly": "false",
+					"state": false,
+					"type": "String"
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Bank City"
+					},
+					"name": "bankCity",
+					"readOnly": "false",
+					"state": false,
+					"type": "String"
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Bank Country"
+					},
+					"name": "bankCountry",
+					"readOnly": "false",
+					"state": false,
+					"type": "String"
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Bank Name"
+					},
+					"name": "bankName",
+					"readOnly": "false",
+					"state": false,
+					"type": "String"
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Bank Phone Number"
+					},
+					"name": "bankPhoneNumber",
+					"readOnly": "false",
+					"state": false,
+					"type": "String"
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Bank State, Province, Region"
+					},
+					"name": "bankStateProvinceRegion",
+					"readOnly": "false",
+					"state": false,
+					"type": "String"
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Bank ZIP, Postal Code"
+					},
+					"name": "bankZIPPostalCode",
+					"readOnly": "false",
+					"state": false,
+					"type": "String"
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Business Address Line 1"
+					},
+					"name": "businessAddressLine1",
+					"readOnly": "false",
+					"state": false,
+					"type": "String"
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Business Address Line 2"
+					},
+					"name": "businessAddressLine2",
+					"readOnly": "false",
+					"state": false,
+					"type": "String"
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Business Annual Revenue (In USD)"
+					},
+					"name": "businessAnnualRevenueInUSD",
+					"readOnly": "false",
+					"state": false,
+					"type": "String"
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Business City"
+					},
+					"name": "businessCity",
+					"readOnly": "false",
+					"state": false,
+					"type": "String"
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Business Country"
+					},
+					"name": "businessCountry",
+					"readOnly": "false",
+					"state": false,
+					"type": "String"
+				},
+				{
+					"DBType": "Integer",
+					"businessType": "Integer",
+					"indexed": true,
+					"label": {
+						"en_US": "Business Employee Number"
+					},
+					"name": "businessEmployeeNumber",
+					"readOnly": "false",
+					"state": false,
+					"type": "Integer"
+				},
+				{
+					"DBType": "Date",
+					"businessType": "Date",
+					"indexed": true,
+					"label": {
+						"en_US": "Business Established Date"
+					},
+					"name": "businessEstablishedDate",
+					"readOnly": "false",
+					"state": false,
+					"type": "Date"
+				},
+				{
+					"DBType": "Long",
+					"businessType": "Attachment",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Business License"
+					},
+					"name": "businessLicense",
+					"objectFieldSettings": [
+						{
+							"name": "acceptedFileExtensions",
+							"value": "jpeg, jpg, pdf, png"
+						},
+						{
+							"name": "fileSource",
+							"value": "userComputer"
+						},
+						{
+							"name": "maximumFileSize",
+							"value": 100
+						},
+						{
+							"name": "showFilesInDocumentsAndMedia",
+							"value": true
+						},
+						{
+							"name": "storageDLFolderPath",
+							"value": "/D4B8DistributorApplication"
+						}
+					],
+					"readOnly": "false",
+					"state": false,
+					"type": "Long"
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Business License Number"
+					},
+					"name": "businessLicenseNumber",
+					"objectFieldSettings": [
+						{
+							"name": "uniqueValues",
+							"value": true
+						}
+					],
+					"readOnly": "false",
+					"required": true,
+					"state": false,
 					"type": "String",
-					"unique": false
+					"unique": true
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Business Name"
+					},
+					"name": "businessName",
+					"readOnly": "false",
+					"state": false,
+					"type": "String"
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Business Phone Number"
+					},
+					"name": "businessPhoneNumber",
+					"readOnly": "false",
+					"state": false,
+					"type": "String"
+				},
+				{
+					"DBType": "Long",
+					"businessType": "Attachment",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Business Proof of Insurance"
+					},
+					"name": "businessProofOfInsurance",
+					"objectFieldSettings": [
+						{
+							"name": "acceptedFileExtensions",
+							"value": "jpeg, jpg, pdf, png"
+						},
+						{
+							"name": "fileSource",
+							"value": "userComputer"
+						},
+						{
+							"name": "maximumFileSize",
+							"value": 100
+						},
+						{
+							"name": "showFilesInDocumentsAndMedia",
+							"value": true
+						},
+						{
+							"name": "storageDLFolderPath",
+							"value": "/D4B8DistributorApplication"
+						}
+					],
+					"readOnly": "false",
+					"state": false,
+					"type": "Long"
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Business Resale Number"
+					},
+					"name": "businessResaleNumber",
+					"objectFieldSettings": [
+						{
+							"name": "uniqueValues",
+							"value": true
+						}
+					],
+					"readOnly": "false",
+					"required": true,
+					"state": false,
+					"type": "String",
+					"unique": true
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Business State, Province, Region"
+					},
+					"name": "businessStateProvinceRegion",
+					"readOnly": "false",
+					"state": false,
+					"type": "String"
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Business Tax ID Number"
+					},
+					"name": "businessTaxIDNumber",
+					"objectFieldSettings": [
+						{
+							"name": "uniqueValues",
+							"value": true
+						}
+					],
+					"readOnly": "false",
+					"required": true,
+					"state": false,
+					"type": "String",
+					"unique": true
+				},
+				{
+					"DBType": "String",
+					"businessType": "Picklist",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Business Type"
+					},
+					"listTypeDefinitionExternalReferenceCode": "D4B8_BUSINESS_TYPES",
+					"name": "businessType",
+					"readOnly": "false",
+					"state": false,
+					"type": "String"
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Business Website URL"
+					},
+					"name": "businessWebsiteURL",
+					"readOnly": "false",
+					"state": false,
+					"type": "String"
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Business ZIP, Postal Code"
+					},
+					"name": "businessZIPPostalCode",
+					"readOnly": "false",
+					"state": false,
+					"type": "String"
+				},
+				{
+					"DBType": "Clob",
+					"businessType": "LongText",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Comments"
+					},
+					"name": "comments",
+					"objectFieldSettings": [
+						{
+							"name": "showCounter",
+							"value": false
+						}
+					],
+					"readOnly": "false",
+					"state": false,
+					"type": "Clob"
+				},
+				{
+					"DBType": "String",
+					"businessType": "MultiselectPicklist",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Distribution Channels"
+					},
+					"listTypeDefinitionExternalReferenceCode": "D4B8_DISTRIBUTION_CHANNELS",
+					"name": "distributionChannels",
+					"readOnly": "false",
+					"state": false,
+					"type": "String"
+				},
+				{
+					"DBType": "String",
+					"businessType": "MultiselectPicklist",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Distribution Regions"
+					},
+					"listTypeDefinitionExternalReferenceCode": "D4B8_DISTRIBUTION_REGIONS",
+					"name": "distributionRegions",
+					"readOnly": "false",
+					"state": false,
+					"type": "String"
+				},
+				{
+					"DBType": "String",
+					"businessType": "MultiselectPicklist",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Order Types of Interest"
+					},
+					"listTypeDefinitionExternalReferenceCode": "D4B8_ORDER_TYPES",
+					"name": "orderTypesOfInterest",
+					"readOnly": "false",
+					"state": false,
+					"type": "String"
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Primary Contact Email Address"
+					},
+					"name": "primaryContactEmailAddress",
+					"objectFieldSettings": [
+						{
+							"name": "uniqueValues",
+							"value": true
+						}
+					],
+					"readOnly": "false",
+					"required": true,
+					"state": false,
+					"type": "String",
+					"unique": true
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Primary Contact Name"
+					},
+					"name": "primaryContactName",
+					"readOnly": "false",
+					"state": false,
+					"type": "String"
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Primary Contact Phone Number"
+					},
+					"name": "primaryContactPhoneNumber",
+					"objectFieldSettings": [
+						{
+							"name": "uniqueValues",
+							"value": true
+						}
+					],
+					"readOnly": "false",
+					"required": true,
+					"state": false,
+					"type": "String",
+					"unique": true
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Primary Contact Title"
+					},
+					"name": "primaryContactTitle",
+					"readOnly": "false",
+					"state": false,
+					"type": "String"
+				},
+				{
+					"DBType": "String",
+					"businessType": "Picklist",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Product Label"
+					},
+					"listTypeDefinitionExternalReferenceCode": "D4B8_PRODUCT_LABELS",
+					"name": "productLabel",
+					"readOnly": "false",
+					"state": false,
+					"type": "String"
+				},
+				{
+					"DBType": "String",
+					"businessType": "MultiselectPicklist",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Products of Interest"
+					},
+					"listTypeDefinitionExternalReferenceCode": "D4B8_PRODUCT_TYPES",
+					"name": "productsOfInterest",
+					"readOnly": "false",
+					"state": false,
+					"type": "String"
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Reference Address Line 1"
+					},
+					"name": "referenceAddressLine1",
+					"readOnly": "false",
+					"state": false,
+					"type": "String"
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Reference Address Line 2"
+					},
+					"name": "referenceAddressLine2",
+					"readOnly": "false",
+					"state": false,
+					"type": "String"
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Reference City"
+					},
+					"name": "referenceCity",
+					"readOnly": "false",
+					"state": false,
+					"type": "String"
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Reference Country"
+					},
+					"name": "referenceCountry",
+					"readOnly": "false",
+					"state": false,
+					"type": "String"
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Reference Phone Number"
+					},
+					"name": "referencePhoneNumber",
+					"readOnly": "false",
+					"state": false,
+					"type": "String"
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Reference State, Province, Region"
+					},
+					"name": "referenceStateProvinceRegion",
+					"readOnly": "false",
+					"state": false,
+					"type": "String"
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Reference Supplier Name"
+					},
+					"name": "referenceSupplierName",
+					"readOnly": "false",
+					"state": false,
+					"type": "String"
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"indexed": true,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Reference ZIP, Postal Code"
+					},
+					"name": "referenceZIPPostalCode",
+					"readOnly": "false",
+					"state": false,
+					"type": "String"
 				}
 			],
 			"objectFolderExternalReferenceCode": "default",
@@ -1294,7 +955,7 @@
 													"size": 6
 												},
 												{
-													"objectFieldName": "applicantEmail",
+													"objectFieldName": "applicantEmailAddress",
 													"priority": 0,
 													"size": 6
 												}
@@ -1334,12 +995,12 @@
 										{
 											"objectLayoutColumns": [
 												{
-													"objectFieldName": "productLabeling",
+													"objectFieldName": "productLabel",
 													"priority": 0,
 													"size": 6
 												},
 												{
-													"objectFieldName": "estimatedAnnualPurchaseVolume",
+													"objectFieldName": "annualPurchaseVolume",
 													"priority": 0,
 													"size": 6
 												}
@@ -1394,7 +1055,7 @@
 										{
 											"objectLayoutColumns": [
 												{
-													"objectFieldName": "primaryContactEmail",
+													"objectFieldName": "primaryContactEmailAddress",
 													"priority": 0,
 													"size": 6
 												},
@@ -1413,7 +1074,7 @@
 								{
 									"collapsable": true,
 									"name": {
-										"en_US": "Business Details "
+										"en_US": "Business Details"
 									},
 									"objectLayoutRows": [
 										{
@@ -1434,7 +1095,7 @@
 										{
 											"objectLayoutColumns": [
 												{
-													"objectFieldName": "businessWebsite",
+													"objectFieldName": "businessWebsiteURL",
 													"priority": 0,
 													"size": 6
 												},
@@ -1459,7 +1120,7 @@
 													"size": 4
 												},
 												{
-													"objectFieldName": "businessAnnualRevenue",
+													"objectFieldName": "businessAnnualRevenueInUSD",
 													"priority": 0,
 													"size": 4
 												}
@@ -1469,7 +1130,7 @@
 										{
 											"objectLayoutColumns": [
 												{
-													"objectFieldName": "businessDistributionChannels",
+													"objectFieldName": "distributionChannels",
 													"priority": 0,
 													"size": 12
 												}
@@ -1489,7 +1150,7 @@
 										{
 											"objectLayoutColumns": [
 												{
-													"objectFieldName": "businessAddressLineOne",
+													"objectFieldName": "businessAddressLine1",
 													"priority": 0,
 													"size": 12
 												}
@@ -1499,7 +1160,7 @@
 										{
 											"objectLayoutColumns": [
 												{
-													"objectFieldName": "businessAddressLineTwo",
+													"objectFieldName": "businessAddressLine2",
 													"priority": 0,
 													"size": 12
 												}
@@ -1642,7 +1303,7 @@
 										{
 											"objectLayoutColumns": [
 												{
-													"objectFieldName": "bankAddressLineOne",
+													"objectFieldName": "bankAddressLine1",
 													"priority": 0,
 													"size": 12
 												}
@@ -1652,7 +1313,7 @@
 										{
 											"objectLayoutColumns": [
 												{
-													"objectFieldName": "bankAddressLineTwo",
+													"objectFieldName": "bankAddressLine2",
 													"priority": 0,
 													"size": 12
 												}
@@ -1717,7 +1378,7 @@
 										{
 											"objectLayoutColumns": [
 												{
-													"objectFieldName": "referenceOneAddressLineOne",
+													"objectFieldName": "referenceAddressLine1",
 													"priority": 0,
 													"size": 12
 												}
@@ -1727,7 +1388,7 @@
 										{
 											"objectLayoutColumns": [
 												{
-													"objectFieldName": "referenceAddressLineTwo",
+													"objectFieldName": "referenceAddressLine2",
 													"priority": 0,
 													"size": 12
 												}
@@ -1775,7 +1436,7 @@
 							"name": {
 								"en_US": "Evaluation Notes"
 							},
-							"objectRelationshipExternalReferenceCode": "R_APPLICATION_TO_EVALUATIONS",
+							"objectRelationshipExternalReferenceCode": "APPLICATION_TO_EVALUATIONS",
 							"priority": 0
 						}
 					]
@@ -1784,47 +1445,13 @@
 			"objectRelationships": [
 				{
 					"deletionType": "prevent",
-					"externalReferenceCode": "R_APPLICATION_TO_EVALUATIONS",
+					"externalReferenceCode": "APPLICATION_TO_EVALUATIONS",
 					"label": {
 						"en_US": "Application to Evaluations"
 					},
 					"name": "applicationToEvaluations",
 					"objectDefinitionExternalReferenceCode1": "D4B8_DISTRIBUTOR_APPLICATION",
 					"objectDefinitionExternalReferenceCode2": "D4B8_APPLICATION_EVALUATION",
-					"objectDefinitionModifiable2": true,
-					"objectDefinitionName2": "ApplicationEvaluation",
-					"objectDefinitionSystem2": false,
-					"objectField": {
-						"DBType": "Long",
-						"businessType": "Relationship",
-						"indexed": true,
-						"indexedAsKeyword": false,
-						"label": {
-							"en_US": "Application to Evaluations"
-						},
-						"localized": false,
-						"name": "r_applicationToEvaluations_c_d4b8DistributorApplicationId",
-						"objectFieldSettings": [
-							{
-								"name": "objectDefinition1ShortName",
-								"value": "D4B8DistributorApplication"
-							},
-							{
-								"name": "objectRelationshipERCObjectFieldName",
-								"value": "r_applicationToEvaluations_c_d4b8DistributorApplicationERC"
-							}
-						],
-						"readOnly": "false",
-						"relationshipType": "oneToMany",
-						"required": false,
-						"state": false,
-						"system": false,
-						"type": "Long",
-						"unique": false
-					},
-					"parameterObjectFieldId": 0,
-					"reverse": false,
-					"system": false,
 					"type": "oneToMany"
 				}
 			],
@@ -1837,12 +1464,11 @@
 						"en_US": "Please enter a valid applicant email address."
 					},
 					"name": {
-						"en_US": "Email, applicantEmail"
+						"en_US": "Email Address, applicantEmailAddress"
 					},
 					"objectDefinitionExternalReferenceCode": "D4B8_DISTRIBUTOR_APPLICATION",
 					"outputType": "fullValidation",
-					"script": "isEmailAddress(applicantEmail) OR applicantEmail == \"\"",
-					"system": false
+					"script": "(applicantEmailAddress == \"\") OR isEmailAddress(applicantEmailAddress)"
 				},
 				{
 					"active": true,
@@ -1852,42 +1478,11 @@
 						"en_US": "Please enter a valid primary contact email address."
 					},
 					"name": {
-						"en_US": "Email, primaryContactEmail"
+						"en_US": "Email Address, primaryContactEmailAddress"
 					},
 					"objectDefinitionExternalReferenceCode": "D4B8_DISTRIBUTOR_APPLICATION",
 					"outputType": "fullValidation",
-					"script": "isEmailAddress(primaryContactEmail) OR primaryContactEmail == \"\"",
-					"system": false
-				},
-				{
-					"active": true,
-					"engine": "ddm",
-					"engineLabel": "Expression Builder",
-					"errorLabel": {
-						"en_US": "Please enter a valid phone number for the primary contact."
-					},
-					"name": {
-						"en_US": "Phone Number, primaryContactPhoneNumber"
-					},
-					"objectDefinitionExternalReferenceCode": "D4B8_DISTRIBUTOR_APPLICATION",
-					"outputType": "fullValidation",
-					"script": "match(primaryContactPhoneNumber, \"^(\\+\\d{1,3} ?)?((\\(\\d{1,3}\\))|\\d{1,3})[- .]?\\d{3,4}[- .]?\\d{4}$\") OR primaryContactPhoneNumber == \"\"",
-					"system": false
-				},
-				{
-					"active": true,
-					"engine": "ddm",
-					"engineLabel": "Expression Builder",
-					"errorLabel": {
-						"en_US": "Please enter a valid phone number for the business."
-					},
-					"name": {
-						"en_US": "Phone Number, businessPhoneNumber"
-					},
-					"objectDefinitionExternalReferenceCode": "D4B8_DISTRIBUTOR_APPLICATION",
-					"outputType": "fullValidation",
-					"script": "match(businessPhoneNumber, \"^(\\+\\d{1,3} ?)?((\\(\\d{1,3}\\))|\\d{1,3})[- .]?\\d{3,4}[- .]?\\d{4}$\") OR businessPhoneNumber == \"\"",
-					"system": false
+					"script": "(primaryContactEmailAddress == \"\") OR isEmailAddress(primaryContactEmailAddress)"
 				},
 				{
 					"active": true,
@@ -1901,8 +1496,35 @@
 					},
 					"objectDefinitionExternalReferenceCode": "D4B8_DISTRIBUTOR_APPLICATION",
 					"outputType": "fullValidation",
-					"script": "match(bankPhoneNumber, \"^(\\+\\d{1,3} ?)?((\\(\\d{1,3}\\))|\\d{1,3})[- .]?\\d{3,4}[- .]?\\d{4}$\") OR bankPhoneNumber == \"\"",
-					"system": false
+					"script": "(bankPhoneNumber == \"\") OR match(bankPhoneNumber, \"^(\\+\\d{1,3} ?)?((\\(\\d{1,3}\\))|\\d{1,3})[- .]?\\d{3,4}[- .]?\\d{4}$\")"
+				},
+				{
+					"active": true,
+					"engine": "ddm",
+					"engineLabel": "Expression Builder",
+					"errorLabel": {
+						"en_US": "Please enter a valid phone number for the business."
+					},
+					"name": {
+						"en_US": "Phone Number, businessPhoneNumber"
+					},
+					"objectDefinitionExternalReferenceCode": "D4B8_DISTRIBUTOR_APPLICATION",
+					"outputType": "fullValidation",
+					"script": "(businessPhoneNumber == \"\") OR match(businessPhoneNumber, \"^(\\+\\d{1,3} ?)?((\\(\\d{1,3}\\))|\\d{1,3})[- .]?\\d{3,4}[- .]?\\d{4}$\")"
+				},
+				{
+					"active": true,
+					"engine": "ddm",
+					"engineLabel": "Expression Builder",
+					"errorLabel": {
+						"en_US": "Please enter a valid phone number for the primary contact."
+					},
+					"name": {
+						"en_US": "Phone Number, primaryContactPhoneNumber"
+					},
+					"objectDefinitionExternalReferenceCode": "D4B8_DISTRIBUTOR_APPLICATION",
+					"outputType": "fullValidation",
+					"script": "(primaryContactPhoneNumber == \"\") OR match(primaryContactPhoneNumber, \"^(\\+\\d{1,3} ?)?((\\(\\d{1,3}\\))|\\d{1,3})[- .]?\\d{3,4}[- .]?\\d{4}$\")"
 				},
 				{
 					"active": true,
@@ -1916,8 +1538,7 @@
 					},
 					"objectDefinitionExternalReferenceCode": "D4B8_DISTRIBUTOR_APPLICATION",
 					"outputType": "fullValidation",
-					"script": "match(referencePhoneNumber, \"^(\\+\\d{1,3} ?)?((\\(\\d{1,3}\\))|\\d{1,3})[- .]?\\d{3,4}[- .]?\\d{4}$\") OR referencePhoneNumber == \"\"",
-					"system": false
+					"script": "(referencePhoneNumber == \"\") OR match(referencePhoneNumber, \"^(\\+\\d{1,3} ?)?((\\(\\d{1,3}\\))|\\d{1,3})[- .]?\\d{3,4}[- .]?\\d{4}$\")"
 				},
 				{
 					"active": true,
@@ -1927,12 +1548,11 @@
 						"en_US": "Please enter a valid website URL."
 					},
 					"name": {
-						"en_US": "URL, businessWebsite"
+						"en_US": "URL, businessWebsiteURL"
 					},
 					"objectDefinitionExternalReferenceCode": "D4B8_DISTRIBUTOR_APPLICATION",
 					"outputType": "fullValidation",
-					"script": "isURL(businessWebsite) OR businessWebsite == \"\"",
-					"system": false
+					"script": "(businessWebsiteURL == \"\") OR isURL(businessWebsiteURL)"
 				}
 			],
 			"objectViews": [
@@ -1989,11 +1609,9 @@
 				}
 			],
 			"panelCategoryKey": "control_panel.object",
-			"parameterRequired": false,
 			"pluralLabel": {
 				"en_US": "D4B8 Distributor Applications"
 			},
-			"portlet": true,
 			"restContextPath": "/o/c/d4b8distributorapplications",
 			"scope": "company",
 			"status": {
@@ -2001,18 +1619,13 @@
 				"label": "approved",
 				"label_i18n": "Approved"
 			},
-			"system": false,
 			"titleObjectFieldName": "businessName"
 		},
 		{
-			"accountEntryRestricted": false,
 			"active": true,
 			"defaultLanguageId": "en_US",
 			"enableCategorization": true,
 			"enableComments": true,
-			"enableLocalization": false,
-			"enableObjectEntryDraft": false,
-			"enableObjectEntryHistory": false,
 			"externalReferenceCode": "D4B8_APPLICATION_EVALUATION",
 			"label": {
 				"en_US": "D4B8 Application Evaluation"
@@ -2022,110 +1635,7 @@
 			"objectFields": [
 				{
 					"DBType": "String",
-					"businessType": "Text",
-					"indexed": false,
-					"indexedAsKeyword": false,
-					"label": {
-						"en_US": "Author"
-					},
-					"localized": false,
-					"name": "creator",
-					"readOnly": "true",
-					"required": false,
-					"state": false,
-					"system": true,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "Date",
-					"businessType": "Date",
-					"indexed": false,
-					"indexedAsKeyword": false,
-					"label": {
-						"en_US": "Create Date"
-					},
-					"localized": false,
-					"name": "createDate",
-					"readOnly": "true",
-					"required": false,
-					"state": false,
-					"system": true,
-					"type": "Date",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": false,
-					"indexedAsKeyword": false,
-					"label": {
-						"en_US": "External Reference Code"
-					},
-					"localized": false,
-					"name": "externalReferenceCode",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": true,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "Long",
-					"businessType": "LongInteger",
-					"indexed": true,
-					"indexedAsKeyword": true,
-					"label": {
-						"en_US": "ID"
-					},
-					"localized": false,
-					"name": "id",
-					"readOnly": "true",
-					"required": false,
-					"state": false,
-					"system": true,
-					"type": "Long",
-					"unique": false
-				},
-				{
-					"DBType": "Date",
-					"businessType": "Date",
-					"indexed": false,
-					"indexedAsKeyword": false,
-					"label": {
-						"en_US": "Modified Date"
-					},
-					"localized": false,
-					"name": "modifiedDate",
-					"readOnly": "true",
-					"required": false,
-					"state": false,
-					"system": true,
-					"type": "Date",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"indexed": false,
-					"indexedAsKeyword": false,
-					"label": {
-						"en_US": "Status"
-					},
-					"localized": false,
-					"name": "status",
-					"readOnly": "true",
-					"required": false,
-					"state": false,
-					"system": true,
-					"type": "String",
-					"unique": false
-				},
-				{
-					"DBType": "String",
 					"businessType": "Picklist",
-					"externalReferenceCode": "FIELD_ASSESSMENT_SCORE",
 					"indexed": true,
 					"indexedAsKeyword": false,
 					"indexedLanguageId": "en_US",
@@ -2133,26 +1643,22 @@
 						"en_US": "Assessment Score"
 					},
 					"listTypeDefinitionExternalReferenceCode": "D4B8_ASSESSMENT_SCORES",
-					"localized": false,
 					"name": "assessmentScore",
 					"readOnly": "false",
 					"required": false,
 					"state": false,
 					"system": false,
-					"type": "String",
-					"unique": false
+					"type": "String"
 				},
 				{
 					"DBType": "Long",
 					"businessType": "Attachment",
-					"externalReferenceCode": "FIELD_ATTACHMENT",
 					"indexed": true,
 					"indexedAsKeyword": false,
 					"indexedLanguageId": "en_US",
 					"label": {
 						"en_US": "Attachment"
 					},
-					"localized": false,
 					"name": "attachment",
 					"objectFieldSettings": [
 						{
@@ -2160,12 +1666,12 @@
 							"value": "jpeg, jpg, pdf, png"
 						},
 						{
-							"name": "maximumFileSize",
-							"value": 100
-						},
-						{
 							"name": "fileSource",
 							"value": "userComputer"
+						},
+						{
+							"name": "maximumFileSize",
+							"value": 100
 						},
 						{
 							"name": "showFilesInDocumentsAndMedia",
@@ -2176,32 +1682,11 @@
 					"required": false,
 					"state": false,
 					"system": false,
-					"type": "Long",
-					"unique": false
-				},
-				{
-					"DBType": "String",
-					"businessType": "Text",
-					"externalReferenceCode": "FIELD_BUSINESS_NAME",
-					"indexed": true,
-					"indexedAsKeyword": false,
-					"indexedLanguageId": "en_US",
-					"label": {
-						"en_US": "Business Name"
-					},
-					"localized": false,
-					"name": "businessName",
-					"readOnly": "false",
-					"required": false,
-					"state": false,
-					"system": false,
-					"type": "String",
-					"unique": false
+					"type": "Long"
 				},
 				{
 					"DBType": "String",
 					"businessType": "Picklist",
-					"externalReferenceCode": "FIELD_DECISION",
 					"indexed": true,
 					"indexedAsKeyword": false,
 					"indexedLanguageId": "en_US",
@@ -2209,57 +1694,48 @@
 						"en_US": "Decision"
 					},
 					"listTypeDefinitionExternalReferenceCode": "D4B8_DECISIONS",
-					"localized": false,
 					"name": "decision",
 					"readOnly": "false",
 					"required": false,
 					"state": false,
 					"system": false,
-					"type": "String",
-					"unique": false
+					"type": "String"
 				},
 				{
 					"DBType": "Clob",
 					"businessType": "RichText",
-					"externalReferenceCode": "FIELD_INTERVIEW_NOTES",
 					"indexed": true,
 					"indexedAsKeyword": false,
 					"indexedLanguageId": "en_US",
 					"label": {
 						"en_US": "Interview Notes"
 					},
-					"localized": false,
 					"name": "interviewNotes",
 					"readOnly": "false",
 					"required": false,
 					"state": false,
 					"system": false,
-					"type": "Clob",
-					"unique": false
+					"type": "Clob"
 				},
 				{
 					"DBType": "Clob",
 					"businessType": "RichText",
-					"externalReferenceCode": "FIELD_RECOMMENDATION_COMMENTS",
 					"indexed": true,
 					"indexedAsKeyword": false,
 					"indexedLanguageId": "en_US",
 					"label": {
 						"en_US": "Recommendation Comments"
 					},
-					"localized": false,
 					"name": "recommendationComments",
 					"readOnly": "false",
 					"required": false,
 					"state": false,
 					"system": false,
-					"type": "Clob",
-					"unique": false
+					"type": "Clob"
 				},
 				{
 					"DBType": "String",
 					"businessType": "MultiselectPicklist",
-					"externalReferenceCode": "FIELD_RECOMMENDATIONS",
 					"indexed": true,
 					"indexedAsKeyword": false,
 					"indexedLanguageId": "en_US",
@@ -2267,14 +1743,12 @@
 						"en_US": "Recommendations"
 					},
 					"listTypeDefinitionExternalReferenceCode": "D4B8_RECOMMENDATIONS",
-					"localized": false,
 					"name": "recommendations",
 					"readOnly": "false",
 					"required": false,
 					"state": false,
 					"system": false,
-					"type": "String",
-					"unique": false
+					"type": "String"
 				}
 			],
 			"objectFolderExternalReferenceCode": "default",
@@ -2458,19 +1932,16 @@
 				}
 			],
 			"panelCategoryKey": "control_panel.object",
-			"parameterRequired": false,
 			"pluralLabel": {
 				"en_US": "D4B8 Application Evaluations"
 			},
-			"portlet": false,
-			"restContextPath": "/o/c/d4b8distributorapplications",
+			"restContextPath": "/o/c/d4b8applicationevaluations",
 			"scope": "company",
 			"status": {
 				"code": 0,
 				"label": "approved",
 				"label_i18n": "Approved"
 			},
-			"system": false,
 			"titleObjectFieldName": "creator"
 		}
 	]

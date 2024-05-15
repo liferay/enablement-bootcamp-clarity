@@ -359,8 +359,11 @@
 												"#value": "Machine Action"
 											},
 											{
-												"#tag-name": "status",
-												"#value": "0"
+												"#tag-name": "script"
+											},
+											{
+												"#tag-name": "script-language",
+												"#value": "function#liferay-clarity-etc-spring-boot-workflow-action-application"
 											},
 											{
 												"#tag-name": "priority",
