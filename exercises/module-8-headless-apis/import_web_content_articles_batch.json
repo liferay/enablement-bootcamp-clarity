@@ -17,15 +17,15 @@
                 "contentFieldValue": {
                     "image": {
                         "description": "Glasses on shelves",
-                        "id": [image-id],
+                        "id": {image-id},
                         "title": "Eyewear glasses on Shelves"
                     }
                 },
                 "name": "image"
             }
         ],
-        "contentStructureId": [content-structure-id],
-        "structuredContentFolderId": [content-folder-id],
+        "contentStructureId": {content-structure-id},
+        "structuredContentFolderId": {content-folder-id},
         "title": "Embracing Eyewear Trends: The Evolution of Fashionable Frames and Stylish Shades",
         "viewableBy": "Anyone"
     },
@@ -47,15 +47,15 @@
                 "contentFieldValue": {
                     "image": {
                         "description": "Glasses on shelves",
-                        "id": [image-id],
+                        "id": {image-id},
                         "title": "Eyewear glasses on Shelves"
                     }
                 },
                 "name": "image"
             }
         ],
-        "contentStructureId": [content-structure-id],
-        "structuredContentFolderId": [content-folder-id],
+        "contentStructureId": {content-structure-id},
+        "structuredContentFolderId": {content-folder-id},
         "title": "Exploring the Ever-Evolving World of Eyewear Trends",
         "viewableBy": "Anyone"
     },
@@ -77,15 +77,15 @@
                 "contentFieldValue": {
                     "image": {
                         "description": "Glasses on shelves",
-                        "id": [image-id],
+                        "id": {image-id},
                         "title": "Eyewear glasses on Shelves"
                     }
                 },
                 "name": "image"
             }
         ],
-        "contentStructureId": [content-structure-id],
-        "structuredContentFolderId": [content-folder-id],
+        "contentStructureId": {content-structure-id},
+        "structuredContentFolderId": {content-folder-id},
         "title": "Exploring the Latest Eyewear Trends for 2024",
         "viewableBy": "Anyone"
     }
