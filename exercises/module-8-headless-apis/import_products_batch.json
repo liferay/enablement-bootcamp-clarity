@@ -1,0 +1,90 @@
+[
+    {
+        "active": true,
+        "catalogId": [catalog-id],
+        "categories": [
+            {
+                "id": [category-id],
+                "name": "Sunglasses",
+                "vocabulary": "clarity products"
+            }
+        ],
+        "defaultSku": "Sunglasses, lifetime warranty, family",
+        "description": {
+            "en_US": "Family Prescription Sunglasses"
+        },
+        "externalReferenceCode": "BB-34099-789-N",
+        "images": [
+            {
+                "fileEntryId": [file-entry-id],
+                "title": {
+                    "en_US": "family-prescription-sunglasses"
+                }
+            }
+        ],
+        "name": {
+            "en_US": "Family Prescription Sunglasses"
+        },
+        "productStatus": 0,
+        "productType": "simple",
+        "productTypeI18n": "Simple",
+        "shortDescription": {
+            "en_US": "UV protection, stylish design"
+        },
+        "skus": [
+            {
+                "cost": 101,
+                "externalReferenceCode": "BB-34099-789-N",
+                "price": 101,
+                "promoPrice": 202,
+                "published": true,
+                "purchasable": true,
+                "sku": "123412554"
+            }
+        ]
+    },
+    {
+        "active": true,
+        "catalogId": [catalog-id],
+        "categories": [
+            {
+                "id": [category-id],
+                "name": "Sunglasses",
+                "vocabulary": "clarity products"
+            }
+        ],
+        "defaultSku": "Sunglasses, lifetime warranty, kids",
+        "description": {
+            "en_US": "Kids Prescription Sunglasses"
+        },
+        "externalReferenceCode": "BB-34098-789-N",
+        "images": [
+            {
+                "fileEntryId": [file-entry-id],
+                "title": {
+                    "en_US": "kids-prescription-sunglasses"
+                }
+            }
+        ],
+        "name": {
+            "en_US": "Kids Prescription Sunglasses"
+        },
+        "productStatus": 0,
+        "productType": "simple",
+        "productTypeI18n": "Simple",
+        "shortDescription": {
+            "en_US": "UV protection, stylish design for kids"
+        },
+        "skus": [
+            {
+                "cost": 101,
+                "externalReferenceCode": "BB-34098-789-N",
+                "price": 101,
+                "promoPrice": 202,
+                "published": true,
+                "purchasable": true,
+                "sku": "123412556"
+            }
+        ]
+    }
+]
