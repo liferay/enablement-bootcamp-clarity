@@ -1,0 +1,8 @@
+assemble:
+    - from: assets
+      hashify: favicon.ico
+      into: static
+liferay-clarity-theme-favicon:
+    name: Liferay Clarity Theme Favicon
+    type: themeFavicon
+    url: favicon.*.ico
