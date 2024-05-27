@@ -359,8 +359,11 @@
 												"#value": "Machine Action"
 											},
 											{
-												"#tag-name": "status",
-												"#value": "0"
+												"#tag-name": "script"
+											},
+											{
+												"#tag-name": "script-language",
+												"#value": "function#liferay-clarity-etc-spring-boot-workflow-action-application"
 											},
 											{
 												"#tag-name": "priority",
@@ -417,20 +420,11 @@
 									{
 										"#child-nodes": [
 											{
-												"#child-nodes": [
-													{
-														"#tag-name": "role-type",
-														"#value": "regular"
-													},
-													{
-														"#tag-name": "name",
-														"#value": "D4B8 Business Development Manager"
-													}
-												],
-												"#tag-name": "role"
+												"#tag-name": "email-address",
+												"#value": "admin@clarityvisionsolutions.com"
 											}
 										],
-										"#tag-name": "roles"
+										"#tag-name": "user"
 									}
 								],
 								"#tag-name": "assignments"

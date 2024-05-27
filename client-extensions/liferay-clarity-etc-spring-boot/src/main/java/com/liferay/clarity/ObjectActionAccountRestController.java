@@ -44,15 +44,15 @@ public class ObjectActionAccountRestController extends BaseRestController {
 
 		JSONObject jsonObject = new JSONObject(json);
 
-		JSONObject objectEntryDTODistributorApplicationJSONObject =
-			jsonObject.getJSONObject("objectEntryDTODistributorApplication");
+		JSONObject objectEntryDTOD4B8DistributorApplicationJSONObject =
+			jsonObject.getJSONObject("objectEntryDTOD4B8DistributorApplication");
 
 		JSONObject propertiesJSONObject =
-			objectEntryDTODistributorApplicationJSONObject.getJSONObject(
+			objectEntryDTOD4B8DistributorApplicationJSONObject.getJSONObject(
 				"properties");
 
 		String accountEmailAddress = propertiesJSONObject.getString(
-			"applicantEmail");
+			"applicantEmailAddress");
 
 		String accountName = propertiesJSONObject.getString("businessName");
 
