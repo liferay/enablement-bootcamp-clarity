@@ -79,26 +79,6 @@
 						"label": "never-ran",
 						"label_i18n": "Never Ran"
 					}
-				},
-				{
-					"active": true,
-					"description": "Standalone, create a business account for an approved application.",
-					"errorMessage": {
-						"en_US": "Failed to create the business account."
-					},
-					"label": {
-						"en_US": "Set Up Account"
-					},
-					"name": "setUpAccount",
-					"objectActionExecutorKey": "function#liferay-clarity-etc-spring-boot-object-action-account",
-					"objectActionTriggerKey": "standalone",
-					"parameters": {
-					},
-					"status": {
-						"code": 0,
-						"label": "never-ran",
-						"label_i18n": "Never Ran"
-					}
 				}
 			],
 			"objectFields": [

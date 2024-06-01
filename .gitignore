@@ -8,4 +8,7 @@ gradle-local.properties
 /node_modules_cache/
 /build/
 /.gradle/
-/configs/local/data/elasticsearch7/
+
+**/elasticsearch7
+**/.DS_Store
+
