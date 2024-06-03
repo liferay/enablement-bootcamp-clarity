@@ -14,22 +14,28 @@ Here are some simple instructions to prepare your environment before the trainin
     git clone https://github.com/liferay/enablement-bootcamp-clarity.git
     ```
 
+    Once cloned, navigate into the project's folder.
+
+    ```
+    cd enablement-bootcamp-clarity
+    ```
+
 1. Perform a git fetch, a day before the training starts, to ensure you have the latest version.
 
     ```
     git fetch origin
     ```
 
-1. Checkout the exercise-01 branch.
+1. Checkout the main branch.
 
     ```
-    git checkout exercise-01
+    git checkout main
     ```
 
-1. To ensure you have the most recent content for exercise-01 branch, run the following command.
+1. To ensure you have the most recent content for main branch, run the following command.
 
     ```
-    git pull origin exercise-01
+    git pull origin main
     ```
 
 1. In the terminal, navigate to the root folder of the repository and run the following command.
@@ -39,13 +45,13 @@ Here are some simple instructions to prepare your environment before the trainin
     ```
 
     ```
-    ./gradlew initBundle
+    blade gw initBundle
     ```
 
     Or
 
     ```
-    blade gw initBundle
+    ./gradlew initBundle
     ```
 
 1. After a successful build, run the 'blade server run' command to start your server.
@@ -54,22 +60,20 @@ Here are some simple instructions to prepare your environment before the trainin
     blade server run
     ```
 
-    In case you don't have blade installed, you can start your server with Tomcat.
+    In case you don't have blade installed, run the following command from the workspace's root folder.
 
     ```
-    cd bundles/tomcat/bin
-    ```
-
-    ```
-    ./catalina.sh run
+    ./bundles/tomcat/bin/catalina.sh run
     ```
 
 Now, a clean Liferay environment should have started.
 
-After starting this environment, log in with the following credentials.
+1. When finished, access your Liferay DXP instance by going to `localhost:8080` in your browser.
 
-* Username: `admin@clarityvisionsolutions.com`
-* Password: `learn`
+1. Sign in using these credentials.
+
+   * Username: `admin@clarityvisionsolutions.com`
+   * Password: `learn`
 
 Once logged in, access the Control Panel &rarr; Search &rarr; Index Actions &rarr; Execute Full Reindex.
 
