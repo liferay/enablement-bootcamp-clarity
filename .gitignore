@@ -11,4 +11,5 @@ gradle-local.properties
 
 **/elasticsearch7
 **/.DS_Store
-
+**/build
+**/dist
