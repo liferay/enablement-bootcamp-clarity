@@ -1,1 +1,15 @@
 // Check GETTING_STARTED.markdown for information regarding usage.
+
+tasks.named('initBundle').configure {
+    doLast {
+        def es7Dir = new File("${rootProject.projectDir}/bundles/data/elasticsearch7")
+        if (es7Dir.exists()) {
+            delete(es7Dir)
+        }
+        def stateDir = new File("${rootProject.projectDir}/bundles/osgi/state")
+        if (stateDir.exists()) {
+            delete(stateDir)
+        }
+    }
+}
+
