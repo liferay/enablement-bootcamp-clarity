@@ -1,8 +1,15 @@
 assemble:
     - from: assets
-      hashify: favicon.ico
       into: static
 liferay-clarity-theme-favicon:
     name: Liferay Clarity Theme Favicon
     type: themeFavicon
-    url: favicon.*.ico
+    url: clarity-favicon-primary.svg
+liferay-clarity-theme-favicon-dark:
+    name: Liferay Clarity Theme Favicon Dark
+    type: themeFavicon
+    url: clarity-favicon-dark.svg
+liferay-clarity-theme-favicon-light:
+    name: Liferay Clarity Theme Favicon Light
+    type: themeFavicon
+    url: clarity-favicon-light.svg
