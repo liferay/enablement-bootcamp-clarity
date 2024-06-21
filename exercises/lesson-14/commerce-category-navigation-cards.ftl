@@ -8,7 +8,7 @@
                 .getFriendlyURL(currentCategory.getCategoryId(), themeDisplay)
 								propertyName = "alphaCode"
             />
-												
+
             <#if cpAssetCategoriesNavigationDisplayContext.getDefaultImageSrc(categoryId)??>
                 <#assign cardImage = true />
             <#else>
@@ -20,7 +20,7 @@
                         <#if cardImage>
                             <div class="aspect-ratio aspect-ratio-8-to-3">
                                 <a href="${categoryHref}">${categoryName}
-                                    <img alt="thumbnail" class="aspect-ratio-item-center-middle aspect-ratio-item-fluid" 
+                                    <img alt="thumbnail" class="aspect-ratio-item-center-middle aspect-ratio-item-fluid"
                                         src="${cpAssetCategoriesNavigationDisplayContext.getDefaultImageSrc(categoryId)}">
                                 </a>
                             </div>
