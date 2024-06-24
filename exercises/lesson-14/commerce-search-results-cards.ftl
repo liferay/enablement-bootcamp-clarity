@@ -30,7 +30,7 @@
 	<div class="product-card-tiles">
 		<#if entries?has_content>
 			<#list entries as curCPCatalogEntry>
-				
+
 				<#assign
 				cpDefinitionId = curCPCatalogEntry.getCPDefinitionId()
 				productId = curCPCatalogEntry.getCProductId()
@@ -49,20 +49,20 @@
 				suggestedClass = ""
 
 				/>
-				
+
 				<#if cpContentHelper.getDefaultCPSku(curCPCatalogEntry)?has_content>
 					<#assign sku = cpContentHelper.getDefaultCPSku(curCPCatalogEntry).getSku()/>
 					<#else>
 						<#assign sku = "" />
 					</#if>
-					
+
 					<#if tags?seq_contains("suggested")>
 						<#assign isSuggested = true />
 						<#assign suggestedClass = "suggested" />
 
 					</#if>
 
-					
+
 					<div class="cp-renderer">
 						<div class="card d-flex flex-column product-card">
 							<div class="card-item-first position-relative">
@@ -93,7 +93,7 @@
 															|
 														</#if>
 														<span class="product-category mb-1">${category.name}</span>
-														<#assign categoryCount++ /> 
+														<#assign categoryCount++ />
 													</#list>
 												</#if>
 
@@ -113,7 +113,7 @@
 															<div class="custom-checkbox custom-control">
 																<@liferay_commerce_ui["compare-checkbox"]
 																CPCatalogEntry=curCPCatalogEntry
-																label="Compare"			 
+																label="Compare"
 																/>
 															</div>
 														</div>
