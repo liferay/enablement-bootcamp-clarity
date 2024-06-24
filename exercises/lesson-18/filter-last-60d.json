@@ -1,0 +1,35 @@
+{
+    "description_i18n": {
+        "en_US": "Limit results to last 60 days."
+    },
+    "elementDefinition": {
+        "category": "filter",
+        "configuration": {
+            "queryConfiguration": {
+                "queryEntries": [
+                    {
+                        "clauses": [
+                            {
+                                "context": "query",
+                                "occur": "filter",
+                                "query": {
+                                    "range": {
+                                        "createDate": {
+                                            "gte": "now-60d"
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "icon": "filter",
+        "uiConfiguration": {}
+    },
+    "title_i18n": {
+        "en_US": "Last 60 Days"
+    },
+    "type": 0
+}
