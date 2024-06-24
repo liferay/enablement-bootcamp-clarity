@@ -1,0 +1,16 @@
+.[$FRAGMENT_CLASS$] {
+    div {
+        animation-name: clarity-anime;
+        animation-duration: 4s;
+    }
+}
+
+@keyframes clarity-anime {
+    from {
+        background-color: #fdfbf7;
+    }
+
+    to {
+        background-color: #167474;
+    }
+}
