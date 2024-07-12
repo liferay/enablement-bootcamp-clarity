@@ -14,7 +14,7 @@
                                 "occur": "filter",
                                 "query": {
                                     "range": {
-                                        "modified": {
+                                        "createDate": {
                                             "gte": "now-60d"
                                         }
                                     }
