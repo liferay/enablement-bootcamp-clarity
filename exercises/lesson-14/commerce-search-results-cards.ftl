@@ -68,9 +68,6 @@
 							<div class="card-item-first position-relative">
 								<a href="${friendlyURL}">
 									<img src="${defaultImageURL}" class="card-img-top" alt="${productName}" />
-												<div class="aspect-ratio-item-bottom-left">
-													<@liferay_commerce_ui["availability-label"] CPCatalogEntry=curCPCatalogEntry />
-												</div>
 											</a>
 										</div>
 
