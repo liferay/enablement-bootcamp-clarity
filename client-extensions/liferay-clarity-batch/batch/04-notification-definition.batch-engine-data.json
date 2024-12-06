@@ -96,26 +96,6 @@
 			},
 			"type": "email",
 			"typeLabel": "Email"
-		},
-		{
-			"description": "Sends user notifications to an administrative role whenever a distributor application is submitted.",
-			"editorType": "richText",
-			"externalReferenceCode": "D4B8_APPLICATION_SUBMITTED_ADMIN_USER",
-			"name": "D4B8 Application Submitted, Admin, User",
-			"name_i18n": {
-				"en_US": "D4B8 Application Submitted, Admin, User"
-			},
-			"recipientType": "role",
-			"recipients": [
-				{
-					"roleName": "D4B8 Business Development Manager"
-				}
-			],
-			"subject": {
-				"en_US": "APP-[%D4B8DISTRIBUTORAPPLICATION_ID%]: [%D4B8DISTRIBUTORAPPLICATION_APPLICANTNAME%] submitted a distributor application for [%D4B8DISTRIBUTORAPPLICATION_BUSINESSNAME%]."
-			},
-			"type": "userNotification",
-			"typeLabel": "User Notification"
 		}
 	]
 }
