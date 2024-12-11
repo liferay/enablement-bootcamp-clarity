@@ -5,6 +5,7 @@
 
 package com.liferay.clarity;
 
+import com.liferay.client.extension.util.spring.boot.BaseRestController;
 import com.liferay.petra.string.StringBundler;
 
 import org.apache.commons.logging.Log;
@@ -44,12 +45,12 @@ public class ObjectActionAccountRestController extends BaseRestController {
 
 		JSONObject jsonObject = new JSONObject(json);
 
-		JSONObject objectEntryDTOD4B8DistributorApplicationJSONObject =
+		JSONObject objectEntryDTODistributorApplicationJSONObject =
 			jsonObject.getJSONObject(
 				"objectEntryDTOD4B8DistributorApplication");
 
 		JSONObject propertiesJSONObject =
-			objectEntryDTOD4B8DistributorApplicationJSONObject.getJSONObject(
+			objectEntryDTODistributorApplicationJSONObject.getJSONObject(
 				"properties");
 
 		String accountEmailAddress = propertiesJSONObject.getString(
