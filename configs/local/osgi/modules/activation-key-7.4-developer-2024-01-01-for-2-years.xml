@@ -10,7 +10,7 @@
 	<license-type>developer</license-type>
 	<license-version>5</license-version>
 	<start-date>Monday, January 1, 2024 12:00:00 PM GMT</start-date>
-	<expiration-date>Tuesday, December 31, 2024 12:00:00 PM GMT</expiration-date>
+	<expiration-date>Wednesday, December 31, 2025 12:00:00 PM GMT</expiration-date>
 	<max-http-sessions>10</max-http-sessions>
-	<key>6c524de9efcb54af029d85c0d0c439c54984f3c24765697ec0d31845f5eca0ad3304f0cda5effa3f360a8e47003d6ef8e64cd461d7a31a93d603b3f502d962ef6c8091d8b66147426599ed9587fe18d9ddfe7bbf376f760e9839c27b542329d1e6d946190c91bbb5b3b2ff2de7afa160c20a8efbebc59014ec7a17062b444ec68613b5f4</key>
+	<key>fc523de95fcb24afe29dd5c010c4d9c5698493c26765b97ee0d3984535ec70ada30400cd45efda3f860a9e47603d9ef8364c2461c7a37a93360393f582d9e2ef6c8091d8b66147426599ed9587fe18d9ddfe7bbf376f760e9839c27b542329d1e6d946190c91bbb5b3b2ff2de7afa160c20a8efbebc59014ec7a17062b444ec68613b5f4</key>
 </license>
