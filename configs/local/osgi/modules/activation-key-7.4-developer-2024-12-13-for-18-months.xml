@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<license>
+	<account-name>Liferay Trial Activation</account-name>
+	<owner>Liferay Enablement</owner>
+	<description>For use with Liferay Learn Courses</description>
+	<product-name>DXP Development</product-name>
+	<product-version>7.4</product-version>
+	<license-name>DXP Development</license-name>
+	<license-type>developer</license-type>
+	<license-version>6</license-version>
+	<start-date>Friday, December 13, 2024 12:00:00 AM GMT</start-date>
+	<expiration-date>Monday, June 15, 2026 12:00:00 AM GMT</expiration-date>
+	<max-http-sessions>5</max-http-sessions>
+	<instance-size>Sizing 1</instance-size>
+	<key>bc867e3ba2d3e9a7d28fe80bfbf613127bff3c78a00593b33f061347dbb9587c3e9e12c664c0a5977ceb3d16f71c8671751ca60d638c68ba41fb8408e0e95a5bc5bffc45f130b4d2f8426bf280562c4f44ea51a1d20391fa437c2be58e9525c92e63a488882482a393b20c464e56bdbcf102d86a163636ce43b88c91c5b2fe9278d7cd40</key>
+</license>
